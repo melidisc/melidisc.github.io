@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Agency Jekyll theme
 ====================
 
@@ -28,3 +29,6 @@ View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-th
 
 =========
 For more details, read [documentation](http://jekyllrb.com/)
+=======
+# melidisc.github.io
+>>>>>>> 3153a5170c88473f3a58781a6d71b3faca8627ee
