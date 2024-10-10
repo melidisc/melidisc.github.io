@@ -3,51 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christos Melidis - Portfolio</title>
+    <title>Christos Melidis, PhD</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f7f4;
+            color: #2e4230;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #356859;
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        header h2 {
+            margin: 10px 0 0;
+            font-size: 1.7em;
+            font-weight: 300;
+            color: #d4e4dd;
+        }
+        nav {
+            text-align: center;
+            background: #37966f;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #c0e8d5;
+        }
+        section {
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        section h3 {
+            border-bottom: 3px solid #356859;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #2e4230;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e6f2ed;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        ul li strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        #contact p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        #contact a {
+            color: #37966f;
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        .to-top-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #356859;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .to-top-button:hover {
+            background-color: #37966f;
+        }
+        details {
+            margin-top: 20px;
+        }
+        details summary {
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #d4e4dd;
+            border-radius: 5px;
+        }
+        details summary:hover {
+            background-color: #c0e8d5;
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        details ul {
+            background: #f0f7f4;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Christos Melidis</h1>
         <h2>Staff ML Scientist @ Ada | Generative AI, Conversational AI, NLP</h2>
     </header>
+    <nav>
+        <a href="#summary">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#neuralithmics">Consulting</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <section id="summary">
         <h3>About Me</h3>
-        <p>I'm a Machine Learning Scientist with over a decade of experience in AI and Robotics, specializing in Conversational AI, including Language, Speech, and Natural Language Processing and Generation. With a PhD in Computer Science, focused on innovative Neural Network architectures for Robotics, I excel at transforming cutting-edge research into practical, real-world applications.</p>
-        <p>My role often bridges research and production, guiding projects from idea to deployment. I have extensive experience in developing various Neural Architectures like RNNs, LSTMs, DNNs, CNNs, and more, often building these systems from the ground up to achieve outstanding results. Driven by a passion for innovation and a commitment to excellence, I strive to stay at the leading edge of Generative and Conversational AI, delivering solutions that make a difference.</p>
+        <p>I am a Machine Learning Scientist with extensive experience working with Large Language Models (LLMs) and deploying AI solutions in production environments. Over the past decade, I have been at the forefront of both academic and industrial research in AI, particularly focusing on Conversational AI, NLP, and Generative AI.</p>
+        <p>My passion lies in bridging the gap between cutting-edge research and practical implementation. I excel at bringing innovative concepts into production, ensuring that research doesn't just stay theoretical but results in impactful, real-world applications. I have successfully led numerous research projects, seeing them through from ideation to deployment, often guiding cross-functional teams to turn complex machine learning models into scalable products.</p>
+        <p>With a strong foundation in Neural Network architectures—including RNNs, LSTMs, Transformers, and CNNs—I have built and optimized AI systems that power intelligent conversational experiences. My focus is on ensuring that each AI model I develop not only achieves state-of-the-art performance but also integrates seamlessly into production, providing tangible value to users and stakeholders.</p>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
     </section>
     <section id="experience">
         <h3>Experience</h3>
+        <h4>Industry Experience</h4>
         <ul>
-            <li><strong>Ada</strong> - Staff Machine Learning Scientist (May 2024 - Present)<br>
-                Working on the forefront of Conversational and Generative AI.</li>
-            <li><strong>Ada</strong> - Senior Machine Learning Scientist (Aug 2021 - May 2024)<br>
-                Member of Ada's ML Research team, working on Conversational and Generative AI.</li>
-            <li><strong>Omilia - Conversational Intelligence</strong> - Senior Machine Learning Engineer - R&D (Feb 2020 - Aug 2021)<br>
-                Applied research on Anti-Spoofing, Emotion Recognition, Diarization, and other classification tasks based on voice data. Tech: Python, PyTorch, C++, PyTorch Lightning, Transformer models, Attention models.</li>
-            <li><strong>Curation Zone</strong> - Data Scientist (Apr 2019 - Feb 2020)<br>
-                Developed AI technologies to identify the World’s best filmmakers using Deep Neural Networks and NLP. Tech: Python, BERT, ELMO, LSTMs, TensorFlow, RESTful API, MongoDB.</li>
-            <li><strong>Stella Novus Limited</strong> - Lead AI Developer (Oct 2018 - Mar 2019)<br>
-                Worked on a digital marketing platform using Deep Neural Networks and NLP. Tech: Python, LSTMs, TensorFlow, RESTful API.</li>
-            <li><strong>i-Dat</strong> - AI & Machine Learning Scientist (Sep 2017 - Sep 2018)<br>
-                Worked on a Chatbot engine with text comprehension using Neural Networks, NLP, and NLG. Tech: Python, LSTMs, Keras, DialogFlow, Rasa.</li>
-            <li><strong>University of Naples Federico II</strong> - Research Scientist (Jun 2017 - Sep 2017)<br>
-                Worked on a Generative Adversarial Architecture based on Echo State Networks, with applications to music generation. Tech: Python, LSTMs, Echo State Networks, Theano.</li>
-            <li><strong>Plymouth University</strong> - Researcher PHD Student (Apr 2014 - Jul 2017)<br>
-                PhD Fellow in Plymouth, research fellow at CogNovo Doctoral Programme, funded by the EU Marie Curie initiative and Plymouth University. Research focused on Adaptive Neural Architectures for Intuitive Robot Control.</li>
-            <li><strong>Plymouth University</strong> - Laboratory Assistant (2015 - 2017)<br>
-                Cross-platform application development in C++ Lab sessions (SOFT336SL). Final year Computer Science BSc level students.</li>
-            <li><strong>Plymouth University</strong> - Research Assistant (Mar 2016 - Apr 2016)<br>
-                Delivered research support to the project: Machine Learning in Functional Disorders.</li>
-            <li><strong>Plymouth University</strong> - Laboratory Assistant (2015 - 2016)<br>
-                Teaching Parallel and Distributed Programming Lab sessions (SOFT339). Final year Computer Science BSc level students.</li>
-            <li><strong>Plymouth University</strong> - Laboratory Assistant (2015 - 2016)<br>
-                Teaching Robotics and Control Lab sessions (MECH533). Final year Mechanical Engineering MSc level students.</li>
-            <li><strong>Plymouth University</strong> - Research Assistant (Oct 2015 - Dec 2015)<br>
-                Developed a new prototype open source sentiment analysis tool for arts and culture discourse.</li>
-            <li><strong>Prof. I.A. TSOUKALAS, MEP</strong> - Information System Officer (Nov 2010 - Apr 2014)<br>
-                Managed information systems for the office of Member of European Parliament.</li>
+            <li><strong>Ada</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Conversational AI, Generative AI, Machine Learning Research, Model Deployment, and Optimization.</li>
+                    <li>Staff Machine Learning Scientist (May 2024 - Present)<br>
+                        Working on the forefront of Conversational and Generative AI.</li>
+                    <li>Senior Machine Learning Scientist (Aug 2021 - May 2024)<br>
+                        Member of Ada's ML Research team, working on Conversational and Generative AI.</li>
+                </ul>
+            </li>
+            <li><strong>Omilia - Conversational Intelligence</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Voice Classification, Anti-Spoofing, Emotion Recognition, Diarization, Transformer Models, and Attention Mechanisms.</li>
+                    <li>Senior Machine Learning Engineer - R&D (Feb 2020 - Aug 2021)<br>
+                        Applied research on Anti-Spoofing, Emotion Recognition, Diarization, and other classification tasks based on voice data. Tech: Python, PyTorch, C++, PyTorch Lightning, Transformer models, Attention models.</li>
+                </ul>
+            </li>
+            <li><strong>Curation Zone</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Deep Learning for Content Discovery, Natural Language Processing, Scoring Systems, and Data Management.</li>
+                    <li>Data Scientist (Apr 2019 - Feb 2020)<br>
+                        Developed AI technologies to identify the World’s best filmmakers using Deep Neural Networks and NLP. Tech: Python, BERT, ELMO, LSTMs, TensorFlow, RESTful API, MongoDB.</li>
+                </ul>
+            </li>
+            <li><strong>Stella Novus Limited</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Digital Marketing AI Solutions, Deep Neural Networks, and NLP Implementation.</li>
+                    <li>Lead AI Developer (Oct 2018 - Mar 2019)<br>
+                        Worked on a digital marketing platform using Deep Neural Networks and NLP. Tech: Python, LSTMs, TensorFlow, RESTful API.</li>
+                </ul>
+            </li>
+            <li><strong>i-Dat</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Chatbot Development, Natural Language Understanding, Neural Networks, and Conversational AI Systems.</li>
+                    <li>AI & Machine Learning Scientist (Sep 2017 - Sep 2018)<br>
+                        Worked on a Chatbot engine with text comprehension using Neural Networks, NLP, and NLG. Tech: Python, LSTMs, Keras, DialogFlow, Rasa.</li>
+                </ul>
+            </li>
+            <li><strong>Prof. I.A. TSOUKALAS, MEP</strong>
+                <ul>
+                    <li>Services offered by Neuralithmics LP: Information Systems Management and AI-based Data Solutions.</li>
+                    <li>Information System Officer (Nov 2010 - Apr 2014)<br>
+                        Managed information systems for the office of Member of European Parliament.</li>
+                </ul>
+            </li>
         </ul>
+        <details>
+            <summary>Academic Experience</summary>
+            <ul>
+                <li><strong>University of Naples Federico II</strong>
+                    <ul>
+                        <li>Research Scientist (Jun 2017 - Sep 2017)<br>
+                            Worked on a Generative Adversarial Architecture based on Echo State Networks, with applications to music generation. Tech: Python, LSTMs, Echo State Networks, Theano.</li>
+                    </ul>
+                </li>
+                <li><strong>Plymouth University</strong>
+                    <ul>
+                        <li>Researcher PHD Student (Apr 2014 - Jul 2017)<br>
+                            PhD Fellow in Plymouth, research fellow at CogNovo Doctoral Programme, funded by the EU Marie Curie initiative and Plymouth University. Research focused on Adaptive Neural Architectures for Intuitive Robot Control.</li>
+                        <li>Laboratory Assistant (2015 - 2017)<br>
+                            Cross-platform application development in C++ Lab sessions (SOFT336SL). Final year Computer Science BSc level students.</li>
+                        <li>Research Assistant (Mar 2016 - Apr 2016)<br>
+                            Delivered research support to the project: Machine Learning in Functional Disorders.</li>
+                        <li>Laboratory Assistant (2015 - 2016)<br>
+                            Teaching Parallel and Distributed Programming Lab sessions (SOFT339). Final year Computer Science BSc level students.</li>
+                        <li>Laboratory Assistant (2015 - 2016)<br>
+                            Teaching Robotics and Control Lab sessions (MECH533). Final year Mechanical Engineering MSc level students.</li>
+                        <li>Research Assistant (Oct 2015 - Dec 2015)<br>
+                            Developed a new prototype open source sentiment analysis tool for arts and culture discourse.</li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
+    </section>
+    <section id="neuralithmics">
+        <h3>Neuralithmics LP</h3>
+        <p>Neuralithmics LP is my consulting firm specializing in AI and machine learning solutions. At Neuralithmics, I work with clients across various industries to develop tailored AI strategies that address their unique business needs. My focus is on leveraging the power of Large Language Models (LLMs) and cutting-edge machine learning techniques to deliver data-driven insights and automation solutions.</p>
+        <p>Through Neuralithmics, I help organizations navigate the complexities of AI, from ideation and strategy to implementation and optimization. By drawing on my extensive experience in both research and industry, I ensure that clients receive solutions that are not only technically advanced but also practically viable and impactful. Whether it's building custom NLP tools, deploying predictive analytics, or consulting on AI adoption, Neuralithmics LP provides the expertise needed to stay ahead in an increasingly data-driven world.</p>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
     </section>
     <section id="skills">
         <h3>Skills</h3>
@@ -61,6 +251,7 @@
             <li>Research & Development</li>
             <li>Python, PyTorch, TensorFlow</li>
         </ul>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
     </section>
     <section id="publications">
         <h3>Publications</h3>
@@ -71,11 +262,13 @@
             <li>A Human Centric Approach to Robotic Control</li>
             <li>An Exploration on Intuitive Interfaces for Robot Control Based on Self Organization</li>
         </ul>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
     </section>
     <section id="contact">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:melidisc@gmail.com">melidisc@gmail.com</a></p>
+        <p>Email: <a href="mailto:christos@neuralithmics.com">christos@neuralithmics.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/christos-melidis">linkedin.com/in/christos-melidis</a></p>
+        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
     </section>
 </body>
 </html>
