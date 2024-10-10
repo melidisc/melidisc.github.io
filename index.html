@@ -4,418 +4,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christos Melidis, PhD</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f7f4;
-            color: #2e4230;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #356859;
-            color: #ffffff;
-            padding: 30px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            letter-spacing: 2px;
-        }
-        header h2 {
-            margin: 10px 0 0;
-            font-size: 1.7em;
-            font-weight: 300;
-            color: #d4e4dd;
-        }
-        nav {
-            text-align: center;
-            background: #37966f;
-            padding: 15px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #c0e8d5;
-        }
-        section {
-            padding: 40px;
-            margin: 30px auto;
-            max-width: 900px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        section h3 {
-            border-bottom: 3px solid #356859;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            font-size: 2em;
-            color: #2e4230;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #e6f2ed;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        }
-        ul li strong {
-            display: block;
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-        #contact p {
-            text-align: center;
-            font-size: 1.1em;
-        }
-        #contact a {
-            color: #37966f;
-            text-decoration: none;
-            transition: text-decoration 0.3s;
-        }
-        #contact a:hover {
-            text-decoration: underline;
-        }
-        .to-top-button {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #356859;
-            color: #ffffff;
-            border: none;
-            border-radius: 50%;
-            padding: 20px;
-            font-size: 18px;
-            cursor: pointer;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s;
-        }
-        .to-top-button:hover {
-            background-color: #37966f;
-        }
-        details {
-            margin-top: 20px;
-        }
-        details summary {
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #d4e4dd;
-            border-radius: 5px;
-        }
-        details summary:hover {
-            background-color: #c0e8d5;
-        }
-        details[open] summary {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        details ul {
-            background: #f0f7f4;
-            padding: 20px;
-            border-radius: 0 0 5px 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .skills-list li i {
-            margin-right: 10px;
-            width: 20px;
-            text-align: center;
-        }
-        .experience-list {
-            margin-top: 20px;
-        }
-        .experience-item {
-            background-color: #f0f7f4;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .experience-item h5 {
-            margin: 0 0 10px 0;
-            font-size: 1.2em;
-            color: #356859;
-        }
-        .experience-item .date {
-            font-weight: normal;
-            font-size: 0.9em;
-            color: #37966f;
-        }
-        .experience-item .job-title {
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        .experience-item .job-description {
-            margin: 10px 0;
-        }
-        .experience-item .tech-stack {
-            font-style: italic;
-            color: #555;
-            margin-top: 10px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Christos Melidis, PhD</h1>
-        <h2>Staff ML Scientist @ Ada | Generative AI, Conversational AI, NLP</h2>
-    </header>
-    <nav>
-        <a href="#summary">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#neuralithmics">Consulting</a>
-        <a href="#skills">Skills</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="summary">
-        <h3>About Me</h3>
-        <p>I am a Machine Learning Scientist with extensive experience working with Large Language Models (LLMs) and deploying AI solutions in production environments. Over the past decade, I have been at the forefront of both academic and industrial research in AI, particularly focusing on Conversational AI, NLP, and Generative AI.</p>
-        <p>My passion lies in bridging the gap between cutting-edge research and practical implementation. I excel at bringing innovative concepts into production, ensuring that research doesn't just stay theoretical but results in impactful, real-world applications. I have successfully led numerous research projects, seeing them through from ideation to deployment, often guiding cross-functional teams to turn complex machine learning models into scalable products.</p>
-        <p>With a strong foundation in Neural Network architectures—including RNNs, LSTMs, Transformers, and CNNs—I have built and optimized AI systems that power intelligent conversational experiences. My focus is on ensuring that each AI model I develop not only achieves state-of-the-art performance but also integrates seamlessly into production, providing tangible value to users and stakeholders.</p>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
-    <section id="experience">
-        <h3>Experience</h3>
-        <h4>Industry Experience</h4>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h5>Ada <span class="date">(Aug 2021 - Present)</span></h5>
-                <p class="job-title">Staff Machine Learning Scientist (May 2024 - Present) | Senior Machine Learning Scientist (Aug 2021 - May 2024)</p>
-                <p class="job-description">Working on the forefront of Conversational and Generative AI as a member of Ada's ML Research team.</p>
-            </div>
-            <div class="experience-item">
-                <h5>Omilia - Conversational Intelligence <span class="date">(Feb 2020 - Aug 2021)</span></h5>
-                <p class="job-title">Senior Machine Learning Engineer - R&D</p>
-                <p class="job-description">Applied research on Anti-Spoofing, Emotion Recognition, Diarization, and other classification tasks based on voice data.</p>
-                <p class="tech-stack">Tech: Python, PyTorch, C++, PyTorch Lightning, Transformer models, Attention models.</p>
-            </div>
-            <div class="experience-item">
-                <h5>Curation Zone <span class="date">(Apr 2019 - Feb 2020)</span></h5>
-                <p class="job-title">Data Scientist</p>
-                <p class="job-description">Developed AI technologies to identify the World's best filmmakers using Deep Neural Networks and NLP.</p>
-                <p class="tech-stack">Tech: Python, BERT, ELMO, LSTMs, TensorFlow, RESTful API, MongoDB.</p>
-            </div>
-            <div class="experience-item">
-                <h5>Stella Novus Limited <span class="date">(Oct 2018 - Mar 2019)</span></h5>
-                <p class="job-title">Lead AI Developer</p>
-                <p class="job-description">Worked on a digital marketing platform using Deep Neural Networks and NLP.</p>
-                <p class="tech-stack">Tech: Python, LSTMs, TensorFlow, RESTful API.</p>
-            </div>
-            <div class="experience-item">
-                <h5>i-Dat <span class="date">(Sep 2017 - Sep 2018)</span></h5>
-                <p class="job-title">AI & Machine Learning Scientist</p>
-                <p class="job-description">Worked on a Chatbot engine with text comprehension using Neural Networks, NLP, and NLG.</p>
-                <p class="tech-stack">Tech: Python, LSTMs, Keras, DialogFlow, Rasa.</p>
-            </div>
-            <div class="experience-item">
-                <h5>Prof. I. A. Tsoukalas, MEP <span class="date">(Nov 2010 - Apr 2014)</span></h5>
-                <p class="job-title">Information System Officer</p>
-                <p class="job-description">Managed information systems for the office of Member of European Parliament.</p>
-            </div>
+    <header id="page-header">
+        <div class="container">
+            <h1>Christos Melidis, PhD</h1>
+            <h2>Staff ML Scientist @ Ada | Generative AI, Conversational AI, NLP</h2>
         </div>
-        <details>
-            <summary>Academic Experience</summary>
-            <ul>
-                <li><strong>University of Naples Federico II</strong>
-                    <ul>
-                        <li>Research Scientist (Jun 2017 - Sep 2017)<br>
-                            Worked on a Generative Adversarial Architecture based on Echo State Networks, with applications to music generation. Tech: Python, LSTMs, Echo State Networks, Theano.</li>
-                    </ul>
-                </li>
-                <li><strong>Plymouth University</strong>
-                    <ul>
-                        <li>Researcher PHD Student (Apr 2014 - Jul 2017)<br>
-                            PhD Fellow in Plymouth, research fellow at CogNovo Doctoral Programme, funded by the EU Marie Curie initiative and Plymouth University. Research focused on Adaptive Neural Architectures for Intuitive Robot Control.</li>
-                        <li>Laboratory Assistant (2015 - 2017)<br>
-                            Cross-platform application development in C++ Lab sessions (SOFT336SL). Final year Computer Science BSc level students.</li>
-                        <li>Research Assistant (Mar 2016 - Apr 2016)<br>
-                            Delivered research support to the project: Machine Learning in Functional Disorders.</li>
-                        <li>Laboratory Assistant (2015 - 2016)<br>
-                            Teaching Parallel and Distributed Programming Lab sessions (SOFT339). Final year Computer Science BSc level students.</li>
-                        <li>Laboratory Assistant (2015 - 2016)<br>
-                            Teaching Robotics and Control Lab sessions (MECH533). Final year Mechanical Engineering MSc level students.</li>
-                        <li>Research Assistant (Oct 2015 - Dec 2015)<br>
-                            Developed a new prototype open source sentiment analysis tool for arts and culture discourse.</li>
-                    </ul>
-                </details>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>  
-    <section id="patents">
-        <h3>Patents</h3>
-        <ul>
-            <li>
-                <details>
-                    <summary>Systems and methods for generating a chatbot</summary>
-                    <ul>
-                        <li>Published: 2023</li>
-                        <li>Summary: Systems and methods for generating a chatbot</li>
-                        <li>Inventors: Arnon Mazza, Christos Melidis</li>
-                        <li>Patent Number: US11676044B1</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Systems and methods for generating automatic training suggestions</summary>
-                    <ul>
-                        <li>Published: 2023</li>
-                        <li>Summary: Describes systems and methods for generating automatic training suggestions to enhance machine learning models and user experience.</li>
-                        <li>Inventors: Armand Silviu Gurgu, Christos Melidis, Gordon Gibson, Adam Sils, Ashley George, Nima Tabatabaei, Aman Bhatia</li>
-                        <li>Patent Number: US20230297887A1</li>
-                    </ul>
-                </details>
-            </li>
-        </ul>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-            <li><i class="fas fa-brain"></i> Machine Learning & AI Development</li>
-            <li><i class="fas fa-network-wired"></i> Deep Learning Architectures (RNNs, LSTMs, CNNs)</li>
-            <li><i class="fas fa-language"></i> Natural Language Processing (NLP)</li>
-            <li><i class="fas fa-robot"></i> Conversational AI & Generative AI</li>
-            <li><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</li>
-            <li><i class="fas fa-chart-line"></i> Statistical Modeling & Predictive Analytics</li>
-            <li><i class="fas fa-flask"></i> Research & Development</li>
-            <li><i class="fas fa-code"></i> Python, PyTorch, TensorFlow</li>
-        </ul>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
-    <section id="neuralithmics">
-        <h3>Consulting</h3>
-        <p>Through Neuralithmics, I offer a comprehensive suite of cutting-edge AI services across diverse industries, including:</p>
-        <ul class="service-list">
-            <li><i class="fas fa-robot"></i> Advanced Conversational AI and Generative AI Solutions</li>
-            <li><i class="fas fa-brain"></i> State-of-the-Art Machine Learning Research and Model Deployment</li>
-            <li><i class="fas fa-microphone-alt"></i> Sophisticated Voice Classification, Anti-Spoofing, Emotion Recognition, and Diarization Systems</li>
-            <li><i class="fas fa-network-wired"></i> Advanced AI Solutions for Content Discovery and Digital Marketing</li>
-            <li><i class="fas fa-language"></i> Advanced Natural Language Processing (NLP) and Intelligent Chatbot Development</li>
-            <li><i class="fas fa-database"></i> Robust Information Systems Management and AI-Driven Data Solutions</li>
-        </ul>
-        <p>My primary focus is on harnessing the transformative power of Large Language Models (LLMs) and pioneering machine learning techniques to deliver actionable, data-driven insights and cutting-edge automation solutions.</p>
-        <p>Through Neuralithmics, I guide organizations through the intricate landscape of AI, from strategic ideation to seamless implementation and continuous optimization. Leveraging my extensive experience in both academic research and industry applications, I ensure that my clients receive solutions that are not only at the forefront of technological advancement but also pragmatically viable and demonstrably impactful. Whether developing bespoke NLP tools, deploying sophisticated predictive analytics, or providing expert consultation on AI adoption strategies, I deliver the critical expertise necessary for maintaining a competitive edge in our increasingly data-centric business environment.</p>
-        <p>To explore how I can elevate your organization's AI capabilities, please <a href="#contact">contact me</a> for a consultation.</p>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
-    
-    <section id="publications">
-        <h3>Publications</h3>
-        <ul>
-            <li>
-                <details>
-                    <summary>Effective Behavioural Dynamic Coupling through Echo State Networks</summary>
-                    <ul>
-                        <li>Published in: Applied Sciences, 2019</li>
-                        <li>Summary: Explores the use of Echo State Networks for effective behavioral dynamic coupling in robotics, aiming to enhance the adaptability of robotic systems.</li>
-                        <li>Authors: Christos Melidis, Davide Marocco</li>
-                        <li>Pages: 1300</li>
-                        <li>Publisher: MDPI</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Intuitive control of mobile robots: an architecture for autonomous adaptive dynamic behaviour integration</summary>
-                    <ul>
-                        <li>Published in: Cognitive Processing, 2018</li>
-                        <li>Summary: Proposes an architectural framework for integrating autonomous adaptive dynamic behaviors into mobile robots to improve navigation efficiency and user interaction.</li>
-                        <li>Authors: Christos Melidis, Hiroyuki Iizuka, Davide Marocco</li>
-                        <li>Pages: 245-264</li>
-                        <li>Publisher: Springer Berlin Heidelberg</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>A test of the adaptive network explanation of functional disorders using a machine learning analysis of symptoms</summary>
-                    <ul>
-                        <li>Published in: Biosystems, 2018</li>
-                        <li>Summary: A machine learning analysis of symptoms to test the adaptive network explanation of functional disorders, providing new insights into understanding these conditions.</li>
-                        <li>Authors: Christos Melidis, Susan L. Denham, Michael E. Hyland</li>
-                        <li>Pages: 22-30</li>
-                        <li>Publisher: Elsevier</li>
-                    </ul>
-                </details>
-            </li>
-            
-            <li>
-                <details>
-                    <summary>An exploration on intuitive interfaces for robot control based on self organisation</summary>
-                    <ul>
-                        <li>Published in: Artificial Life and Intelligent Agents: First International Symposium, ALIA 2014, Bangor, UK, November 5-6, 2014. Revised Selected Papers 1, 2015</li>
-                        <li>Summary: Explores intuitive interfaces for robot control using self-organization techniques, aiming to enhance the usability and effectiveness of robotic systems.</li>
-                        <li>Authors: Christos Melidis, Davide Marocco</li>
-                        <li>Pages: 73-79</li>
-                        <li>Publisher: Springer International Publishing</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>A Human Centric Approach to Robotic Control</summary>
-                    <ul>
-                        <li>Published in: 2015 IEEE International Conference on Systems, Man, and Cybernetics</li>
-                        <li>Summary: Focuses on human-centric design principles for robotic control interfaces, emphasizing ease of use and user satisfaction.</li>
-                        <li>Authors: Christos Melidis, Davide Marocco</li>
-                        <li>Pages: 2441-2446</li>
-                        <li>Publisher: IEEE</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>KURE: A Two-Way Adaptive System for Intuitive Robot Control</summary>
-                    <ul>
-                        <li>Published in: Not available</li>
-                        <li>Summary: Introduces a two-way adaptive system for intuitive robot control, aiming to improve user interaction with robotic systems.</li>
-                        <li>Authors: Christos Melidis, Davide Marocco</li>
-                        <li>Pages: Not available</li>
-                        <li>Publisher: Publisher not available</li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>KURE: Kinematic Universal Remote Interface - A Human Centered Remote Robot Control Paradigm</summary>
-                    <ul>
-                        <li>Published in: 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC)</li>
-                        <li>Summary: Presents a kinematic approach to creating an intuitive remote control interface for robots, enhancing user experience in human-robot interaction.</li>
-                        <li>Authors: Christos Melidis, Davide Marocco</li>
-                        <li>Pages: 003130-003135</li>
-                        <li>Publisher: IEEE</li>
-                    </ul>
-                </details>
-            </li>
-            
-        </ul>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
-    
+    </header>
+    <nav id="main-nav">
+        <div class="container">
+            <a href="#summary">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#neuralithmics">Consulting</a>
+            <a href="#skills">Skills</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="about-skills-container">
+            <section id="summary" class="about-section">
+                <h3>About Me</h3>
+                <p>I am a Machine Learning Scientist with extensive experience working with Large Language Models (LLMs) and deploying AI solutions in production environments. Over the past decade, I have been at the forefront of both academic and industrial research in AI, particularly focusing on Conversational AI, NLP, and Generative AI.</p>
+                </br>
+                <p>My passion lies in bridging the gap between cutting-edge research and practical implementation. I excel at bringing innovative concepts into production, ensuring that research doesn't just stay theoretical but results in impactful, real-world applications. I have successfully led numerous research projects, seeing them through from ideation to deployment, often guiding cross-functional teams to turn complex machine learning models into scalable products.</p>
+                </br>
+                <p>With a strong foundation in Neural Network architectures—including RNNs, LSTMs, Transformers, and CNNs—I have built and optimized AI systems that power intelligent conversational experiences. My focus is on ensuring that each AI model I develop not only achieves state-of-the-art performance but also integrates seamlessly into production, providing tangible value to users and stakeholders.</p>
+            </section>
+            <section id="skills" class="skills-section">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li><i class="fas fa-brain"></i> Machine Learning & AI Development</li>
+                    <li><i class="fas fa-network-wired"></i> Deep Learning Architectures (RNNs, LSTMs, CNNs)</li>
+                    <li><i class="fas fa-language"></i> Natural Language Processing (NLP)</li>
+                    <li><i class="fas fa-robot"></i> Conversational AI & Generative AI</li>
+                    <li><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</li>
+                    <li><i class="fas fa-chart-line"></i> Statistical Modeling & Predictive Analytics</li>
+                    <li><i class="fas fa-flask"></i> Research & Development</li>
+                    <li><i class="fas fa-code"></i> Python, PyTorch, TensorFlow</li>
+                </ul>
+            </section>
+        </div>
+        <section id="experience">
+            <h3>Experience</h3>
+            <h4>Industry Experience</h4>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h5>Ada <span class="date">(Aug 2021 - Present)</span></h5>
+                    <p class="job-title">Staff Machine Learning Scientist (May 2024 - Present)</p>
+                    
+                    <p class="job-title">Senior Machine Learning Scientist (Aug 2021 - May 2024)</p>
+                    <p class="job-description">Working on the forefront of Conversational and Generative AI as a member of Ada's ML Research team.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Omilia - Conversational Intelligence <span class="date">(Feb 2020 - Aug 2021)</span></h5>
+                    <p class="job-title">Senior Machine Learning Engineer - R&D</p>
+                    <p class="job-description">Applied research on Anti-Spoofing, Emotion Recognition, Diarization, and other classification tasks based on voice data.</p>
+                    <p class="tech-stack">Tech: Python, PyTorch, C++, PyTorch Lightning, Transformer models, Attention models.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Curation Zone <span class="date">(Apr 2019 - Feb 2020)</span></h5>
+                    <p class="job-title">Data Scientist</p>
+                    <p class="job-description">Developed AI technologies to identify the World's best filmmakers using Deep Neural Networks and NLP.</p>
+                    <p class="tech-stack">Tech: Python, BERT, ELMO, LSTMs, TensorFlow, RESTful API, MongoDB.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Stella Novus Limited <span class="date">(Oct 2018 - Mar 2019)</span></h5>
+                    <p class="job-title">Lead AI Developer</p>
+                    <p class="job-description">Worked on a digital marketing platform using Deep Neural Networks and NLP.</p>
+                    <p class="tech-stack">Tech: Python, LSTMs, TensorFlow, RESTful API.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>i-Dat <span class="date">(Sep 2017 - Sep 2018)</span></h5>
+                    <p class="job-title">AI & Machine Learning Scientist</p>
+                    <p class="job-description">Worked on a Chatbot engine with text comprehension using Neural Networks, NLP, and NLG.</p>
+                    <p class="tech-stack">Tech: Python, LSTMs, Keras, DialogFlow, Rasa.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Prof. I. A. Tsoukalas, MEP <span class="date">(Nov 2010 - Apr 2014)</span></h5>
+                    <p class="job-title">Information System Officer</p>
+                    <p class="job-description">Managed information systems for the office of Member of European Parliament.</p>
+                </div>
+            </div>
+
+            <h4 class="toggle-header">
+                Academic Experience
+                <button class="toggle-button" aria-expanded="false">
+                    <span class="icon">&#9660;</span> <!-- Down arrow -->
+                </button>
+            </h4>
+            <div class="experience-list academic-list" hidden>
+                <div class="experience-item">
+                    <h5>University of Naples Federico II <span class="date">(Jun 2017 - Sep 2017)</span></h5>
+                    <p class="job-title">Research Scientist</p>
+                    <p class="job-description">Worked on a Generative Adversarial Architecture based on Echo State Networks, with applications to music generation.</p>
+                    <p class="tech-stack">Tech: Python, LSTMs, Echo State Networks, Theano.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(Apr 2014 - Jul 2017)</span></h5>
+                    <p class="job-title">Researcher PhD Student</p>
+                    <p class="job-description">PhD Fellow in Plymouth, research fellow at CogNovo Doctoral Programme, funded by the EU Marie Curie initiative and Plymouth University. Research focused on Adaptive Neural Architectures for Intuitive Robot Control.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(2015 - 2017)</span></h5>
+                    <p class="job-title">Laboratory Assistant</p>
+                    <p class="job-description">Cross-platform application development in C++ Lab sessions (SOFT336SL). Final year Computer Science BSc level students.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(Mar 2016 - Apr 2016)</span></h5>
+                    <p class="job-title">Research Assistant</p>
+                    <p class="job-description">Delivered research support to the project: Machine Learning in Functional Disorders.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(2015 - 2016)</span></h5>
+                    <p class="job-title">Laboratory Assistant</p>
+                    <p class="job-description">Teaching Parallel and Distributed Programming Lab sessions (SOFT339). Final year Computer Science BSc level students.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(2015 - 2016)</span></h5>
+                    <p class="job-title">Laboratory Assistant</p>
+                    <p class="job-description">Teaching Robotics and Control Lab sessions (MECH533). Final year Mechanical Engineering MSc level students.</p>
+                </div>
+                <div class="experience-item">
+                    <h5>Plymouth University <span class="date">(Oct 2015 - Dec 2015)</span></h5>
+                    <p class="job-title">Research Assistant</p>
+                    <p class="job-description">Developed a new prototype open source sentiment analysis tool for arts and culture discourse.</p>
+                </div>
+            </div>
+        </section>  
+        <section id="patents">
+            <h3>Patents</h3>
+            <div class="patent-list">
+                <div class="patent-item">
+                    <h4 class="toggle-header">
+                        Systems and methods for generating a chatbot
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="patent-details" hidden>
+                        <p><strong>Published:</strong> 2023</p>
+                        <p><strong>Summary:</strong> Systems and methods for generating a chatbot</p>
+                        <p><strong>Inventors:</strong> Arnon Mazza, Christos Melidis</p>
+                        <p><strong>Patent Number:</strong> US11676044B1</p>
+                    </div>
+                </div>
+                <div class="patent-item">
+                    <h4 class="toggle-header">
+                        Systems and methods for generating automatic training suggestions
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="patent-details" hidden>
+                        <p><strong>Published:</strong> 2023</p>
+                        <p><strong>Summary:</strong> Describes systems and methods for generating automatic training suggestions to enhance machine learning models and user experience.</p>
+                        <p><strong>Inventors:</strong> Armand Silviu Gurgu, Christos Melidis, Gordon Gibson, Adam Sils, Ashley George, Nima Tabatabaei, Aman Bhatia</p>
+                        <p><strong>Patent Number:</strong> US20230297887A1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="neuralithmics">
+            <h3>Consulting</h3>
+            <p>Through Neuralithmics, I offer a comprehensive suite of cutting-edge AI services across diverse industries, including:</p>
+            <ul class="service-list">
+                <li><i class="fas fa-robot"></i> Advanced Conversational AI and Generative AI Solutions</li>
+                <li><i class="fas fa-brain"></i> State-of-the-Art Machine Learning Research and Model Deployment</li>
+                <li><i class="fas fa-microphone-alt"></i> Sophisticated Voice Classification, Anti-Spoofing, Emotion Recognition, and Diarization Systems</li>
+                <li><i class="fas fa-network-wired"></i> Advanced AI Solutions for Content Discovery and Digital Marketing</li>
+                <li><i class="fas fa-language"></i> Advanced Natural Language Processing (NLP) and Intelligent Chatbot Development</li>
+                <li><i class="fas fa-database"></i> Robust Information Systems Management and AI-Driven Data Solutions</li>
+            </ul>
+            <div class="consulting-focus">
+                <p>My primary focus is on harnessing the transformative power of Large Language Models (LLMs) and pioneering machine learning techniques to deliver actionable, data-driven insights and cutting-edge automation solutions.</p>
+                <p>Through Neuralithmics, I guide organizations through the intricate landscape of AI, from strategic ideation to seamless implementation and continuous optimization. Leveraging my extensive experience in both academic research and industry applications, I ensure that my clients receive solutions that are not only at the forefront of technological advancement but also pragmatically viable and demonstrably impactful.</p>
+                <p>Whether developing bespoke NLP tools, deploying sophisticated predictive analytics, or providing expert consultation on AI adoption strategies, I deliver the critical expertise necessary for maintaining a competitive edge in our increasingly data-centric business environment.</p>
+            </div>
+            <p class="cta">To explore how I can elevate your organization's AI capabilities, please <a href="#contact">contact me</a> for a consultation.</p>
+        </section>
         
-    <section id="contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:christos@neuralithmics.com">christos@neuralithmics.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/christos-melidis">linkedin.com/in/christos-melidis</a></p>
-        <button class="to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
-    </section>
+        <section id="publications">
+            <h3>Publications</h3>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        Effective Behavioural Dynamic Coupling through Echo State Networks
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Davide Marocco</p>
+                        <p><strong>Year:</strong> 2019</p>
+                        <p><strong>Journal:</strong> Applied Sciences</p>
+                        <p><strong>Pages:</strong> 1300</p>
+                        <p><strong>Publisher:</strong> MDPI</p>
+                        <p><strong>Summary:</strong> Explores the use of Echo State Networks for effective behavioral dynamic coupling in robotics, aiming to enhance the adaptability of robotic systems.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        Intuitive control of mobile robots: an architecture for autonomous adaptive dynamic behaviour integration
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Hiroyuki Iizuka, Davide Marocco</p>
+                        <p><strong>Year:</strong> 2018</p>
+                        <p><strong>Journal:</strong> Cognitive Processing</p>
+                        <p><strong>Pages:</strong> 245-264</p>
+                        <p><strong>Publisher:</strong> Springer Berlin Heidelberg</p>
+                        <p><strong>Summary:</strong> Proposes an architectural framework for integrating autonomous adaptive dynamic behaviors into mobile robots to improve navigation efficiency and user interaction.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        A test of the adaptive network explanation of functional disorders using a machine learning analysis of symptoms
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Susan L. Denham, Michael E. Hyland</p>
+                        <p><strong>Year:</strong> 2018</p>
+                        <p><strong>Journal:</strong> Biosystems</p>
+                        <p><strong>Pages:</strong> 22-30</p>
+                        <p><strong>Publisher:</strong> Elsevier</p>
+                        <p><strong>Summary:</strong> A machine learning analysis of symptoms to test the adaptive network explanation of functional disorders, providing new insights into understanding these conditions.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        An exploration on intuitive interfaces for robot control based on self organisation
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Davide Marocco</p>
+                        <p><strong>Year:</strong> 2015</p>
+                        <p><strong>Conference:</strong> Artificial Life and Intelligent Agents: First International Symposium, ALIA 2014</p>
+                        <p><strong>Pages:</strong> 73-79</p>
+                        <p><strong>Publisher:</strong> Springer International Publishing</p>
+                        <p><strong>Summary:</strong> Explores intuitive interfaces for robot control using self-organization techniques, aiming to enhance the usability and effectiveness of robotic systems.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        A Human Centric Approach to Robotic Control
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Davide Marocco</p>
+                        <p><strong>Year:</strong> 2015</p>
+                        <p><strong>Conference:</strong> IEEE International Conference on Systems, Man, and Cybernetics</p>
+                        <p><strong>Pages:</strong> 2441-2446</p>
+                        <p><strong>Publisher:</strong> IEEE</p>
+                        <p><strong>Summary:</strong> Focuses on human-centric design principles for robotic control interfaces, emphasizing ease of use and user satisfaction.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        KURE: A Two-Way Adaptive System for Intuitive Robot Control
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Davide Marocco</p>
+                        <p><strong>Year:</strong> Not available</p>
+                        <p><strong>Summary:</strong> Introduces a two-way adaptive system for intuitive robot control, aiming to improve user interaction with robotic systems.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h4 class="toggle-header">
+                        KURE: Kinematic Universal Remote Interface - A Human Centered Remote Robot Control Paradigm
+                        <button class="toggle-button" aria-expanded="false">
+                            <span class="icon">&#9660;</span>
+                        </button>
+                    </h4>
+                    <div class="publication-details" hidden>
+                        <p><strong>Authors:</strong> Christos Melidis, Davide Marocco</p>
+                        <p><strong>Year:</strong> 2016</p>
+                        <p><strong>Conference:</strong> IEEE International Conference on Systems, Man, and Cybernetics (SMC)</p>
+                        <p><strong>Pages:</strong> 003130-003135</p>
+                        <p><strong>Publisher:</strong> IEEE</p>
+                        <p><strong>Summary:</strong> Presents a kinematic approach to creating an intuitive remote control interface for robots, enhancing user experience in human-robot interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> <a href="mailto:christos@neuralithmics.com" target="_blank" rel="noopener noreferrer">christos@neuralithmics.com</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/christos-melidis" target="_blank" rel="noopener noreferrer">linkedin.com/in/christos-melidis</a></li>
+                <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/ChristosMelidis" target="_blank" rel="noopener noreferrer">@ChristosMelidis</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Christos Melidis. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="to-top-button" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="script.js"></script>
 </body>
 </html>
