@@ -14,8 +14,9 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Personal website of Christos Melidis, PhD. Machine Learning Scientist with a strong background in programming and a PhD in AI and Robotics. Extensive experience in designing and implementing novel Neural Network architectures, with focus on Natural Language Processing, Understanding, and Generation. Proven track record of translating cutting-edge research into production-ready solutions.'
-    twitter: 'melidisc'
+    description: 'Neuralithmics - AI & Machine Learning consulting by Christos Melidis, PhD. Transforming cutting-edge AI research into production-ready solutions. Specializing in Conversational AI, LLMs, NLP, and Voice Technologies.'
+    twitter: 'ChristosMelidis'
+    image: 'images/site-thumbnail.png'
   analytics:
     google_analytics: ''
     baidu_tongji: ''

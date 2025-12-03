@@ -10,9 +10,15 @@ design:
 sections:
   - block: markdown
     content:
-      title: 'Neuralithmics'
-      subtitle: 'Transforming AI Research into Production-Ready Solutions'
+      title: ''
+      subtitle: ''
       text: |-
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <img src="/images/neuralithmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 500px; width: 100%; height: auto; margin: 0 auto;">
+        </div>
+        
+        ### Transforming AI Research into Production-Ready Solutions
+        
         **Neuralithmics** is my consulting practice, offering specialized expertise in Artificial Intelligence and Machine Learning to help organizations bridge the gap between cutting-edge research and practical implementation.
         
         With over a decade of experience in both academic research and industry applications, I bring a unique perspective that combines theoretical depth with hands-on engineering expertise. My work has resulted in multiple patents and has been published in leading AI conferences and journals.
@@ -30,6 +36,9 @@ sections:
         }
         .intro-section h2, .intro-section h3 {
           color: white !important;
+        }
+        .intro-section img {
+          filter: brightness(0) invert(1);
         }
 
   - block: markdown
