@@ -1,0 +1,79 @@
+{{/* Custom Experience Block Template */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $section := $block.Content }}
+
+<div class="row">
+  <div class="col-12 mx-auto">
+    {{ with $section.title }}
+      <h2 class="mb-4">{{ . | markdownify }}</h2>
+    {{ end }}
+
+    {{ with $section.subtitle }}
+      <p class="font-weight-light mb-4">{{ . | markdownify }}</p>
+    {{ end }}
+
+    {{ if $section.items }}
+      {{ range $section.items }}
+        <div class="row experience-item mb-5">
+          <div class="col-auto text-center flex-column d-none d-sm-flex">
+            <div class="m-2">
+              <span class="badge badge-pill border {{ if .date_end }}exp-fill{{ end }}">
+                {{ if .date_end }}
+                  <i class="fas fa-calendar-check"></i>
+                {{ else }}
+                  <i class="fas fa-calendar-alt"></i>
+                {{ end }}
+              </span>
+            </div>
+            <div class="m-2">
+              <span class="badge badge-pill border">&nbsp;</span>
+            </div>
+          </div>
+          
+          <div class="col py-2">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <div>
+                    <h4 class="card-title exp-title text-muted mt-0 mb-1">{{ .title | markdownify }}</h4>
+                    <h5 class="card-subtitle mb-1">
+                      {{ if .company_url }}
+                        <a href="{{ .company_url }}" target="_blank" rel="noopener">{{ .company | markdownify }}</a>
+                      {{ else }}
+                        {{ .company | markdownify }}
+                      {{ end }}
+                    </h5>
+                    {{ with .location }}
+                      <div class="text-muted">{{ . | markdownify }}</div>
+                    {{ end }}
+                  </div>
+                  <div class="text-right">
+                    {{ with .date_start }}
+                      {{ $startDate := dateFormat ($.wcBlock.Content.date_format | default "January 2006") . }}
+                      {{ if $.wcBlock.Content.date_format }}
+                        {{ $startDate = dateFormat $.wcBlock.Content.date_format . }}
+                      {{ end }}
+                      {{ if .date_end }}
+                        {{ $endDate := dateFormat ($.wcBlock.Content.date_format | default "January 2006") .date_end }}
+                        {{ if $.wcBlock.Content.date_format }}
+                          {{ $endDate = dateFormat $.wcBlock.Content.date_format .date_end }}
+                        {{ end }}
+                        <div class="exp-meta">{{ $startDate }} – {{ $endDate }}</div>
+                      {{ else }}
+                        <div class="exp-meta">{{ $startDate }} – Present</div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                {{ with .description }}
+                  <div class="card-text">{{ . | markdownify }}</div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

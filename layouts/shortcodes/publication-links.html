@@ -1,0 +1,43 @@
+{{/* Publication Links Shortcode */}}
+{{ $pdf := .Get "pdf" | default "" }}
+{{ $code := .Get "code" | default "" }}
+{{ $dataset := .Get "dataset" | default "" }}
+{{ $poster := .Get "poster" | default "" }}
+{{ $project := .Get "project" | default "" }}
+{{ $slides := .Get "slides" | default "" }}
+{{ $source := .Get "source" | default "" }}
+{{ $video := .Get "video" | default "" }}
+
+<div class="publication-links">
+  {{ if ne $pdf "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $pdf }}" target="_blank" rel="noopener">PDF</a>
+  {{ end }}
+  
+  {{ if ne $code "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $code }}" target="_blank" rel="noopener">Code</a>
+  {{ end }}
+  
+  {{ if ne $dataset "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $dataset }}" target="_blank" rel="noopener">Dataset</a>
+  {{ end }}
+  
+  {{ if ne $poster "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $poster }}" target="_blank" rel="noopener">Poster</a>
+  {{ end }}
+  
+  {{ if ne $project "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $project }}" target="_blank" rel="noopener">Project</a>
+  {{ end }}
+  
+  {{ if ne $slides "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $slides }}" target="_blank" rel="noopener">Slides</a>
+  {{ end }}
+  
+  {{ if ne $source "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $source }}" target="_blank" rel="noopener">Source</a>
+  {{ end }}
+  
+  {{ if ne $video "" }}
+    <a class="btn btn-outline-primary btn-sm" href="{{ $video }}" target="_blank" rel="noopener">Video</a>
+  {{ end }}
+</div>

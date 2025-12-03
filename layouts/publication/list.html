@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<div class="universal-wrapper">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+  {{ $view := .Params.view | default "4" }}
+
+  {{ partial "views/4.start" . }}
+  {{ range .Pages }}
+    {{ partial "views/4" . }}
+  {{ end }}
+  {{ partial "views/4.end" . }}
+
+</div>
+
+{{ end }}

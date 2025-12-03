@@ -1,0 +1,52 @@
+{{/* Citation view for publications */}}
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  {{/* APA-like citation */}}
+  <span class="article-metadata li-cite-author">
+    {{ with .Params.authors }}
+      {{ $authorLen := len . }}
+      {{ range $k, $v := . }}
+        {{- $v -}}
+        {{- if lt $k (sub $authorLen 1) -}}, {{ end }}
+      {{ end }}
+    {{ end }}
+  </span>
+  ({{- .Date.Format "2006" -}}).
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+  {{ if .Params.publication }}
+    <em>{{ .Params.publication | markdownify }}</em>.
+    {{ if .Params.doi }}
+      <a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">https://doi.org/{{ .Params.doi }}</a>
+    {{ end }}
+  {{ else if .Params.publication_short }}
+    <em>{{ .Params.publication_short | markdownify }}</em>
+  {{ end }}
+
+  <div class="btn-links">
+    {{ if .Params.url_pdf }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_pdf }}" target="_blank" rel="noopener">PDF</a>
+    {{ end }}
+    {{ if .Params.url_code }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_code }}" target="_blank" rel="noopener">Code</a>
+    {{ end }}
+    {{ if .Params.url_dataset }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_dataset }}" target="_blank" rel="noopener">Dataset</a>
+    {{ end }}
+    {{ if .Params.url_poster }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_poster }}" target="_blank" rel="noopener">Poster</a>
+    {{ end }}
+    {{ if .Params.url_project }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_project }}" target="_blank" rel="noopener">Project</a>
+    {{ end }}
+    {{ if .Params.url_slides }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_slides }}" target="_blank" rel="noopener">Slides</a>
+    {{ end }}
+    {{ if .Params.url_source }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_source }}" target="_blank" rel="noopener">Source</a>
+    {{ end }}
+    {{ if .Params.url_video }}
+      <a class="btn btn-outline-primary btn-sm" href="{{ .Params.url_video }}" target="_blank" rel="noopener">Video</a>
+    {{ end }}
+  </div>
+</div>

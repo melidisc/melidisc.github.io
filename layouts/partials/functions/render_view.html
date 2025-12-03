@@ -1,0 +1,13 @@
+{{/* Render View Function */}}
+
+{{/* Get view type */}}
+{{ $view := .view | default "compact" }}
+
+{{/* Check fragment */}}
+{{ if eq .fragment "start" }}
+  {{ partial (printf "views/%s.start" $view) . }}
+{{ else if eq .fragment "end" }}
+  {{ partial (printf "views/%s.end" $view) . }}
+{{ else }}
+  {{ partial (printf "views/%s" $view) (dict "item" .item "index" (.index | default 0) "page" .page "config" (.config | default dict)) }}
+{{ end }}

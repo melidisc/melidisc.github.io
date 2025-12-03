@@ -1,0 +1,28 @@
+{{/* Publication links/buttons */}}
+{{ $page := .page }}
+{{ $is_list := .is_list }}
+
+{{ if $page.Params.url_pdf }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_pdf }}" target="_blank" rel="noopener">PDF</a>
+{{ end }}
+{{ if $page.Params.url_code }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_code }}" target="_blank" rel="noopener">Code</a>
+{{ end }}
+{{ if $page.Params.url_dataset }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_dataset }}" target="_blank" rel="noopener">Dataset</a>
+{{ end }}
+{{ if $page.Params.url_poster }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_poster }}" target="_blank" rel="noopener">Poster</a>
+{{ end }}
+{{ if $page.Params.url_project }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_project }}" target="_blank" rel="noopener">Project</a>
+{{ end }}
+{{ if $page.Params.url_slides }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_slides }}" target="_blank" rel="noopener">Slides</a>
+{{ end }}
+{{ if $page.Params.url_source }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_source }}" target="_blank" rel="noopener">Source</a>
+{{ end }}
+{{ if $page.Params.url_video }}
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.Params.url_video }}" target="_blank" rel="noopener">Video</a>
+{{ end }}

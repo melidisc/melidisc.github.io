@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
+hugo_stats.json
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+

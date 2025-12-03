@@ -1,0 +1,29 @@
+{{/* Featured Image with Caption Shortcode */}}
+{{ $image := .Get "src" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $alt := .Get "alt" | default $caption }}
+{{ $credit := .Get "credit" | default "" }}
+{{ $link := .Get "link" | default "" }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $class := .Get "class" | default "" }}
+
+<figure class="featured-image {{ $class }}">
+  {{ if ne $link "" }}
+    <a href="{{ $link }}" target="_blank" rel="noopener">
+  {{ end }}
+  <img src="{{ $image }}" alt="{{ $alt }}" style="width: {{ $width }};">
+  {{ if ne $link "" }}
+    </a>
+  {{ end }}
+  {{ if or (ne $caption "") (ne $credit "") }}
+    <figcaption>
+      {{ $caption }}
+      {{ if and (ne $caption "") (ne $credit "") }}
+        <br>
+      {{ end }}
+      {{ if ne $credit "" }}
+        <span class="image-credit">Image credit: {{ $credit }}</span>
+      {{ end }}
+    </figcaption>
+  {{ end }}
+</figure>

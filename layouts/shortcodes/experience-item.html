@@ -1,0 +1,28 @@
+{{/* Experience Item Shortcode */}}
+{{ $title := .Get "title" }}
+{{ $company := .Get "company" }}
+{{ $link := .Get "link" | default "#" }}
+{{ $location := .Get "location" | default "" }}
+{{ $startDate := .Get "startDate" }}
+{{ $endDate := .Get "endDate" | default "Present" }}
+{{ $description := .Get "description" | default .Inner }}
+
+<div class="experience-item">
+  <div class="experience-header">
+    <h3 class="experience-title">{{ $title }}</h3>
+    <div class="experience-company">
+      {{ if ne $link "#" }}
+        <a href="{{ $link }}" target="_blank" rel="noopener">{{ $company }}</a>
+      {{ else }}
+        {{ $company }}
+      {{ end }}
+    </div>
+    {{ if ne $location "" }}
+      <div class="experience-location">{{ $location }}</div>
+    {{ end }}
+    <div class="experience-date">{{ $startDate }} – {{ $endDate }}</div>
+  </div>
+  <div class="experience-description">
+    {{ $description | markdownify }}
+  </div>
+</div>

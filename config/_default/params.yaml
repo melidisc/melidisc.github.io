@@ -1,0 +1,70 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+appearance:
+  mode: system
+  color: emerald
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: 'Personal website of Christos Melidis, PhD. Machine Learning Scientist with a strong background in programming and a PhD in AI and Robotics. Extensive experience in designing and implementing novel Neural Network architectures, with focus on Natural Language Processing, Understanding, and Generation. Proven track record of translating cutting-edge research into production-ready solutions.'
+    twitter: 'melidisc'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Christos Melidis, PhD"
+
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} Christos Melidis, PhD. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+
+# Integrations
+integrations:
+  twitter:
+    widget_id: 'twsrc%5Etfw' # Create a Twitter widget at https://publish.twitter.com/
+    username: ChristosMelidis
+    show_replies: false
+    show_retweets: true
+    tweet_limit: 15
+    theme: light

@@ -1,0 +1,8 @@
+{{/* Author metadata */}}
+{{ with .Params.authors }}
+  {{ $authorLen := len . }}
+  {{ range $k, $v := . }}
+    {{- $v -}}
+    {{- if lt $k (sub $authorLen 1) -}}, {{ end }}
+  {{ end }}
+{{ end }}
