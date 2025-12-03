@@ -15,7 +15,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:melidisc@gmail.com'
+    link: 'mailto:christos@neuralithmics.com'
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/ChristosMelidis

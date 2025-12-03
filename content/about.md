@@ -53,7 +53,7 @@ sections:
         
         ---
         
-        ✉️ **Interested in collaboration or consulting?** [Let's connect!](mailto:melidisc@gmail.com)
+        ✉️ **Interested in collaboration or consulting?** [Let's connect!](mailto:christos@neuralithmics.com)
     design:
       columns: '1'
       css_style: |

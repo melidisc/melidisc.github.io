@@ -158,7 +158,7 @@ sections:
         
         ### 📧 Contact Information
         
-        **Email:** [melidisc@gmail.com](mailto:melidisc@gmail.com)  
+        **Email:** [christos@neuralithmics.com](mailto:christos@neuralithmics.com)  
         **LinkedIn:** [linkedin.com/in/christos-melidis](https://linkedin.com/in/christos-melidis)  
         **Location:** Thessaloniki, Greece (Remote work available globally)
         
