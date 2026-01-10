@@ -61,4 +61,309 @@
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+
+  /* ===== Common Page Section Styles ===== */
+  
+  /* Header Section - Gradient hero banners */
+  .header-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .header-section h2, .header-section h3 {
+    color: white !important;
+  }
+
+  /* Current Role Card - Highlighted current position */
+  .current-role {
+    background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+  }
+  .current-role h3 {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .current-role strong {
+    color: #667eea;
+  }
+  .current-role strong a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  /* Experience Card - Standard job entries */
+  .experience-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #e9ecef;
+  }
+  .experience-card:hover {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    border-left-color: #667eea;
+  }
+  .experience-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .experience-card strong {
+    color: #667eea;
+  }
+
+  /* Academic Card - Research/education entries */
+  .academic-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #764ba2;
+  }
+  .academic-card:hover {
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.15);
+  }
+  .academic-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+  }
+  .academic-card strong {
+    color: #764ba2;
+  }
+
+  /* Career Summary - Stats banner */
+  .career-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .career-summary h2 {
+    color: white !important;
+  }
+  .career-summary p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .career-summary strong {
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  /* Patents Section */
+  .patents-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #667eea;
+  }
+  .patent-list h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .patent-list strong {
+    color: #764ba2;
+  }
+  .patent-list hr {
+    margin: 2rem 0;
+    border-color: #dee2e6;
+  }
+
+  /* Publication List */
+  .publication-list h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.4;
+  }
+  .publication-list strong {
+    color: #667eea;
+  }
+  .publication-list em {
+    color: #6c757d;
+  }
+  .publication-list hr {
+    margin: 2rem 0;
+    border-color: #dee2e6;
+  }
+
+  /* Conference List */
+  .conference-list h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.4;
+  }
+  .conference-list strong {
+    color: #764ba2;
+  }
+  .conference-list em {
+    color: #6c757d;
+  }
+  .conference-list hr {
+    margin: 2rem 0;
+    border-color: #dee2e6;
+  }
+
+  /* Impact Section with Metrics */
+  .impact-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .metric-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 3px solid #667eea;
+  }
+  .metric-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+  }
+  .metric-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  .metric-detail {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  .impact-section h3 {
+    color: #2c3e50;
+    margin-top: 2rem;
+  }
+  .impact-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .impact-section ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid #e9ecef;
+  }
+  .contact-section h3 {
+    color: var(--primary);
+  }
+
+  /* Intro Section - Homepage hero */
+  .intro-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+  .intro-section h2, .intro-section h3 {
+    color: white !important;
+  }
+  .intro-section img {
+    filter: brightness(0) invert(1);
+  }
+
+  /* CTA Button Styles */
+  .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    margin-top: 1rem;
+  }
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    color: white !important;
+  }
+  .cta-button-secondary {
+    display: inline-block;
+    background: white;
+    color: #667eea !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #667eea;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+  }
+  .cta-button-secondary:hover {
+    background: #667eea;
+    color: white !important;
+  }
+  .cta-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  /* Dark mode adjustments */
+  .dark .experience-card {
+    background: #1a1a2e;
+    border-left-color: #4a4a6a;
+  }
+  .dark .experience-card:hover {
+    border-left-color: #667eea;
+  }
+  .dark .experience-card h3 {
+    color: #e0e0e0;
+  }
+  .dark .academic-card {
+    background: #1a1a2e;
+  }
+  .dark .academic-card h3 {
+    color: #e0e0e0;
+  }
+  .dark .patents-section,
+  .dark .impact-section,
+  .dark .contact-section {
+    background: #1a1a2e;
+    border-color: #4a4a6a;
+  }
+  .dark .metric-card {
+    background: #2a2a4e;
+  }
+  .dark .metric-label {
+    color: #e0e0e0;
+  }
 </style>

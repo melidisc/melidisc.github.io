@@ -14,18 +14,6 @@ sections:
     design:
       columns: '1'
       css_class: header-section
-      css_style: |
-        .header-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 2.5rem;
-          border-radius: 1rem;
-          margin-bottom: 2rem;
-          text-align: center;
-        }
-        .header-section h2, .header-section h3 {
-          color: white !important;
-        }
 
   - block: markdown
     content:
@@ -55,27 +43,6 @@ sections:
     design:
       columns: '1'
       css_class: current-role
-      css_style: |
-        .current-role {
-          background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
-          padding: 2rem;
-          border-radius: 0.75rem;
-          border-left: 4px solid #667eea;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-          margin-bottom: 1.5rem;
-        }
-        .current-role h3 {
-          color: #667eea;
-          font-size: 1.4rem;
-          margin-bottom: 0.5rem;
-        }
-        .current-role strong {
-          color: #667eea;
-        }
-        .current-role strong a {
-          color: #667eea;
-          text-decoration: none;
-        }
 
   - block: markdown
     content:
@@ -99,27 +66,6 @@ sections:
     design:
       columns: '1'
       css_class: experience-card
-      css_style: |
-        .experience-card {
-          background: white;
-          padding: 2rem;
-          border-radius: 0.75rem;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-          margin-bottom: 1.5rem;
-          border-left: 3px solid #e9ecef;
-        }
-        .experience-card:hover {
-          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-          border-left-color: #667eea;
-        }
-        .experience-card h3 {
-          color: #2c3e50;
-          font-size: 1.3rem;
-          margin-bottom: 0.5rem;
-        }
-        .experience-card strong {
-          color: #667eea;
-        }
 
   - block: markdown
     content:
@@ -239,25 +185,6 @@ sections:
     design:
       columns: '1'
       css_class: academic-card
-      css_style: |
-        .academic-card {
-          background: #f8f9fa;
-          padding: 2rem;
-          border-radius: 0.75rem;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-          margin-bottom: 1.5rem;
-          border-left: 4px solid #764ba2;
-        }
-        .academic-card:hover {
-          box-shadow: 0 4px 12px rgba(118, 75, 162, 0.15);
-        }
-        .academic-card h3 {
-          color: #2c3e50;
-          font-size: 1.3rem;
-        }
-        .academic-card strong {
-          color: #764ba2;
-        }
 
   - block: markdown
     content:
@@ -291,24 +218,4 @@ sections:
     design:
       columns: '1'
       css_class: career-summary
-      css_style: |
-        .career-summary {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 2rem;
-          border-radius: 1rem;
-          text-align: center;
-          margin-top: 2rem;
-        }
-        .career-summary h2 {
-          color: white !important;
-        }
-        .career-summary p {
-          font-size: 1.2rem;
-          font-weight: 500;
-        }
-        .career-summary strong {
-          font-size: 1.4rem;
-          color: white;
-        }
 ---

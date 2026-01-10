@@ -18,6 +18,9 @@ marketing:
     twitter: 'ChristosMelidis'
     image: 'images/site-thumbnail.png'
   analytics:
+    # TODO: Add analytics - recommended options:
+    # - Google Analytics 4: Create at https://analytics.google.com/
+    # - Plausible (privacy-friendly): https://plausible.io/
     google_analytics: ''
     baidu_tongji: ''
     plausible: ''

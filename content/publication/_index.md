@@ -16,18 +16,6 @@ sections:
     design:
       columns: '1'
       css_class: header-section
-      css_style: |
-        .header-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 2.5rem;
-          border-radius: 1rem;
-          margin-bottom: 2rem;
-          text-align: center;
-        }
-        .header-section h2, .header-section h3 {
-          color: white !important;
-        }
 
   - block: markdown
     content:
@@ -56,26 +44,6 @@ sections:
     design:
       columns: '1'
       css_class: patents-section
-      css_style: |
-        .patents-section {
-          background: #f8f9fa;
-          padding: 2rem;
-          border-radius: 1rem;
-          border-left: 4px solid #667eea;
-        }
-        .patent-list h3 {
-          color: #667eea;
-          font-size: 1.3rem;
-          margin-bottom: 0.5rem;
-          margin-top: 1.5rem;
-        }
-        .patent-list strong {
-          color: #764ba2;
-        }
-        .patent-list hr {
-          margin: 2rem 0;
-          border-color: #dee2e6;
-        }
 
   - block: markdown
     content:
@@ -113,24 +81,6 @@ sections:
         
     design:
       columns: '1'
-      css_style: |
-        .publication-list h3 {
-          color: #2c3e50;
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-          margin-top: 1.5rem;
-          line-height: 1.4;
-        }
-        .publication-list strong {
-          color: #667eea;
-        }
-        .publication-list em {
-          color: #6c757d;
-        }
-        .publication-list hr {
-          margin: 2rem 0;
-          border-color: #dee2e6;
-        }
 
   - block: markdown
     content:
@@ -182,24 +132,6 @@ sections:
         
     design:
       columns: '1'
-      css_style: |
-        .conference-list h3 {
-          color: #2c3e50;
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-          margin-top: 1.5rem;
-          line-height: 1.4;
-        }
-        .conference-list strong {
-          color: #764ba2;
-        }
-        .conference-list em {
-          color: #6c757d;
-        }
-        .conference-list hr {
-          margin: 2rem 0;
-          border-color: #dee2e6;
-        }
 
   - block: markdown
     content:
@@ -247,53 +179,4 @@ sections:
     design:
       columns: '1'
       css_class: impact-section
-      css_style: |
-        .impact-section {
-          background: #f8f9fa;
-          padding: 2rem;
-          border-radius: 1rem;
-        }
-        .impact-metrics {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 1.5rem;
-          margin: 2rem 0;
-        }
-        .metric-card {
-          background: white;
-          padding: 1.5rem;
-          border-radius: 0.5rem;
-          text-align: center;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          border-top: 3px solid #667eea;
-        }
-        .metric-number {
-          font-size: 2.5rem;
-          font-weight: bold;
-          color: #667eea;
-          margin-bottom: 0.5rem;
-        }
-        .metric-label {
-          font-size: 1.1rem;
-          font-weight: 600;
-          color: #2c3e50;
-          margin-bottom: 0.5rem;
-        }
-        .metric-detail {
-          font-size: 0.9rem;
-          color: #6c757d;
-        }
-        .impact-section h3 {
-          color: #2c3e50;
-          margin-top: 2rem;
-        }
-        .impact-section ul {
-          list-style: none;
-          padding-left: 0;
-        }
-        .impact-section ul li {
-          margin-bottom: 0.8rem;
-          padding-left: 1.5rem;
-          position: relative;
-        }
 ---

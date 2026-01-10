@@ -16,18 +16,21 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:christos@neuralithmics.com'
-  - icon: x-twitter
-    icon_pack: fab
-    link: https://x.com/ChristosMelidis
   - icon: linkedin
     icon_pack: fab
     link: https://linkedin.com/in/christos-melidis
   - icon: github
     icon_pack: fab
     link: https://github.com/melidisc
-  - icon: rss
+  - icon: x-twitter
+    icon_pack: fab
+    link: https://x.com/ChristosMelidis
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0003-2339-6696
+  - icon: graduation-cap
     icon_pack: fas
-    link: http://cmelidis.blogspot.com/
+    link: https://plymouth.academia.edu/ChristosMelidis
 
 organizations:
   - name: Ada Support LTD

@@ -22,24 +22,14 @@ sections:
         **Neuralithmics** is my consulting practice, offering specialized expertise in Artificial Intelligence and Machine Learning to help organizations bridge the gap between cutting-edge research and practical implementation.
         
         With over a decade of experience in both academic research and industry applications, I bring a unique perspective that combines theoretical depth with hands-on engineering expertise. My work has resulted in multiple patents and has been published in leading AI conferences and journals.
+        
+        <div class="cta-container" style="margin-top: 2rem;">
+          <a href="mailto:christos@neuralithmics.com" class="cta-button" style="background: white; color: #667eea !important;">Get in Touch →</a>
+        </div>
 
     design:
       columns: '1'
       css_class: intro-section
-      css_style: |
-        .intro-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 3rem;
-          border-radius: 1rem;
-          margin-bottom: 3rem;
-        }
-        .intro-section h2, .intro-section h3 {
-          color: white !important;
-        }
-        .intro-section img {
-          filter: brightness(0) invert(1);
-        }
 
   - block: markdown
     content:
@@ -121,11 +111,6 @@ sections:
         
     design:
       columns: '1'
-      css_style: |
-        .markdown h3 {
-          color: var(--primary);
-          margin-top: 2rem;
-        }
 
   - block: markdown
     content:
@@ -156,6 +141,12 @@ sections:
       text: |-
         Ready to discuss your AI project or need expert guidance on machine learning challenges?
         
+        <div class="cta-container">
+          <a href="mailto:christos@neuralithmics.com" class="cta-button">📧 Schedule a Discovery Call</a>
+        </div>
+        
+        ---
+        
         ### 📧 Contact Information
         
         **Email:** [christos@neuralithmics.com](mailto:christos@neuralithmics.com)  
@@ -173,19 +164,12 @@ sections:
         
         ---
         
-        **Let's transform your AI vision into reality.**
+        <div class="cta-container">
+          <a href="/about/" class="cta-button-secondary">Learn More About Me</a>
+          <a href="/publication/" class="cta-button-secondary">View Publications</a>
+        </div>
         
     design:
       columns: '1'
       css_class: contact-section
-      css_style: |
-        .contact-section {
-          background: #f8f9fa;
-          padding: 3rem;
-          border-radius: 1rem;
-          border: 2px solid #e9ecef;
-        }
-        .contact-section h3 {
-          color: var(--primary);
-        }
 ---
