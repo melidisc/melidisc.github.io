@@ -2,12 +2,25 @@
 {{/* Minimal Terracotta Color Palette */}}
 <style>
   :root {
-    --terracotta-primary: #a3877e;
-    --terracotta-secondary: #cbbab3;
-    --terracotta-light: #e8ddd8;
-    --terracotta-bg: #faf8f6;
-    --terracotta-text: #5c5250;
-    --terracotta-text-light: #8a7f7a;
+    --tc-primary: #a3877e;
+    --tc-secondary: #cbbab3;
+    --tc-light: #e8ddd8;
+    --tc-bg: #faf8f6;
+    --tc-text: #5c5250;
+    --tc-text-light: #8a7f7a;
+    --tc-border: #e0d6d0;
+  }
+
+  /* ===== Page Width - 80% viewport ===== */
+  .universal-wrapper,
+  .container,
+  .page-wrapper > .container,
+  main > .container,
+  .hb-section > .container {
+    max-width: 80vw !important;
+    width: 80vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* Experience Item Shortcode Styles */
@@ -34,7 +47,7 @@
   }
   
   .experience-date {
-    color: var(--terracotta-primary);
+    color: var(--tc-primary);
     font-size: 0.9rem;
   }
   
@@ -74,38 +87,38 @@
 
   /* ===== Common Page Section Styles ===== */
   
-  /* Header Section - Gradient hero banners */
+  /* Header Section - Minimal pale background */
   .header-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: var(--tc-bg);
+    color: var(--tc-text);
     padding: 2.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin-bottom: 2rem;
     text-align: center;
+    border: 1px solid var(--tc-border);
   }
   .header-section h2, .header-section h3 {
-    color: white !important;
+    color: var(--tc-text) !important;
   }
 
   /* Current Role Card - Highlighted current position */
   .current-role {
-    background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+    background: var(--tc-bg);
     padding: 2rem;
-    border-radius: 0.75rem;
-    border-left: 4px solid #667eea;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--tc-primary);
     margin-bottom: 1.5rem;
   }
   .current-role h3 {
-    color: #667eea;
+    color: var(--tc-text);
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
   }
   .current-role strong {
-    color: #667eea;
+    color: var(--tc-primary);
   }
   .current-role strong a {
-    color: #667eea;
+    color: var(--tc-primary);
     text-decoration: none;
   }
 
@@ -113,55 +126,53 @@
   .experience-card {
     background: white;
     padding: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
     margin-bottom: 1.5rem;
-    border-left: 3px solid #e9ecef;
+    border-left: 2px solid var(--tc-border);
   }
   .experience-card:hover {
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-    border-left-color: #667eea;
+    border-left-color: var(--tc-primary);
   }
   .experience-card h3 {
-    color: #2c3e50;
+    color: var(--tc-text);
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
   .experience-card strong {
-    color: #667eea;
+    color: var(--tc-primary);
   }
 
   /* Academic Card - Research/education entries */
   .academic-card {
-    background: #f8f9fa;
+    background: var(--tc-bg);
     padding: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 0.5rem;
     margin-bottom: 1.5rem;
-    border-left: 4px solid #764ba2;
+    border-left: 2px solid var(--tc-secondary);
   }
   .academic-card:hover {
-    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.15);
+    border-left-color: var(--tc-primary);
   }
   .academic-card h3 {
-    color: #2c3e50;
+    color: var(--tc-text);
     font-size: 1.3rem;
   }
   .academic-card strong {
-    color: #764ba2;
+    color: var(--tc-primary);
   }
 
   /* Career Summary - Stats banner */
   .career-summary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: var(--tc-light);
+    color: var(--tc-text);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
     margin-top: 2rem;
+    border: 1px solid var(--tc-border);
   }
   .career-summary h2 {
-    color: white !important;
+    color: var(--tc-text) !important;
   }
   .career-summary p {
     font-size: 1.2rem;
@@ -169,73 +180,73 @@
   }
   .career-summary strong {
     font-size: 1.4rem;
-    color: white;
+    color: var(--tc-primary);
   }
 
   /* Patents Section */
   .patents-section {
-    background: #f8f9fa;
+    background: var(--tc-bg);
     padding: 2rem;
-    border-radius: 1rem;
-    border-left: 4px solid #667eea;
+    border-radius: 0.5rem;
+    border-left: 2px solid var(--tc-primary);
   }
   .patent-list h3 {
-    color: #667eea;
+    color: var(--tc-text);
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
   }
   .patent-list strong {
-    color: #764ba2;
+    color: var(--tc-primary);
   }
   .patent-list hr {
     margin: 2rem 0;
-    border-color: #dee2e6;
+    border-color: var(--tc-border);
   }
 
   /* Publication List */
   .publication-list h3 {
-    color: #2c3e50;
+    color: var(--tc-text);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
     line-height: 1.4;
   }
   .publication-list strong {
-    color: #667eea;
+    color: var(--tc-primary);
   }
   .publication-list em {
-    color: #6c757d;
+    color: var(--tc-text-light);
   }
   .publication-list hr {
     margin: 2rem 0;
-    border-color: #dee2e6;
+    border-color: var(--tc-border);
   }
 
   /* Conference List */
   .conference-list h3 {
-    color: #2c3e50;
+    color: var(--tc-text);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
     line-height: 1.4;
   }
   .conference-list strong {
-    color: #764ba2;
+    color: var(--tc-primary);
   }
   .conference-list em {
-    color: #6c757d;
+    color: var(--tc-text-light);
   }
   .conference-list hr {
     margin: 2rem 0;
-    border-color: #dee2e6;
+    border-color: var(--tc-border);
   }
 
   /* Impact Section with Metrics */
   .impact-section {
-    background: #f8f9fa;
+    background: var(--tc-bg);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
   .impact-metrics {
     display: grid;
@@ -248,27 +259,26 @@
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-top: 3px solid #667eea;
+    border-top: 2px solid var(--tc-primary);
   }
   .metric-number {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #667eea;
+    color: var(--tc-primary);
     margin-bottom: 0.5rem;
   }
   .metric-label {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: var(--tc-text);
     margin-bottom: 0.5rem;
   }
   .metric-detail {
     font-size: 0.9rem;
-    color: #6c757d;
+    color: var(--tc-text-light);
   }
   .impact-section h3 {
-    color: #2c3e50;
+    color: var(--tc-text);
     margin-top: 2rem;
   }
   .impact-section ul {
@@ -283,63 +293,60 @@
 
   /* Contact Section */
   .contact-section {
-    background: #f8f9fa;
+    background: var(--tc-bg);
     padding: 3rem;
-    border-radius: 1rem;
-    border: 2px solid #e9ecef;
+    border-radius: 0.5rem;
+    border: 1px solid var(--tc-border);
   }
   .contact-section h3 {
-    color: var(--primary);
+    color: var(--tc-text);
   }
 
   /* Intro Section - Homepage hero */
   .intro-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: var(--tc-bg);
+    color: var(--tc-text);
     padding: 3rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin-bottom: 3rem;
+    border: 1px solid var(--tc-border);
   }
   .intro-section h2, .intro-section h3 {
-    color: white !important;
+    color: var(--tc-text) !important;
   }
-  .intro-section img {
-    filter: brightness(0) invert(1);
-  }
+  /* Image displays normally - no filter */
 
   /* CTA Button Styles */
   .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--tc-primary);
     color: white !important;
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.2s ease;
     margin-top: 1rem;
   }
   .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    background: var(--tc-text);
     color: white !important;
   }
   .cta-button-secondary {
     display: inline-block;
     background: white;
-    color: #667eea !important;
+    color: var(--tc-primary) !important;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid #667eea;
-    transition: all 0.3s ease;
+    border: 1px solid var(--tc-primary);
+    transition: all 0.2s ease;
     margin: 0.5rem;
   }
   .cta-button-secondary:hover {
-    background: #667eea;
+    background: var(--tc-primary);
     color: white !important;
   }
   .cta-container {
@@ -348,32 +355,73 @@
   }
 
   /* Dark mode adjustments */
+  .dark {
+    --tc-primary: #c4a89e;
+    --tc-secondary: #a89590;
+    --tc-light: #3a3432;
+    --tc-bg: #2a2624;
+    --tc-text: #e8e2df;
+    --tc-text-light: #a9a09b;
+    --tc-border: #4a4240;
+  }
   .dark .experience-card {
-    background: #1a1a2e;
-    border-left-color: #4a4a6a;
+    background: #2a2624;
+    border-left-color: #4a4240;
   }
   .dark .experience-card:hover {
-    border-left-color: #667eea;
+    border-left-color: var(--tc-primary);
   }
   .dark .experience-card h3 {
-    color: #e0e0e0;
+    color: var(--tc-text);
   }
   .dark .academic-card {
-    background: #1a1a2e;
+    background: #2a2624;
   }
   .dark .academic-card h3 {
-    color: #e0e0e0;
+    color: var(--tc-text);
   }
+  .dark .header-section,
+  .dark .intro-section,
+  .dark .career-summary,
   .dark .patents-section,
   .dark .impact-section,
   .dark .contact-section {
-    background: #1a1a2e;
-    border-color: #4a4a6a;
+    background: #2a2624;
+    border-color: #4a4240;
+  }
+  .dark .current-role {
+    background: #2a2624;
   }
   .dark .metric-card {
-    background: #2a2a4e;
+    background: #3a3432;
   }
   .dark .metric-label {
-    color: #e0e0e0;
+    color: var(--tc-text);
+  }
+
+  /* Publication page styling */
+  .section-pub-list .pub-list-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--tc-border);
+  }
+  .section-pub-list .pub-list-item:last-child {
+    border-bottom: none;
+  }
+  .section-pub-list .article-metadata {
+    color: var(--tc-text-light);
+  }
+  .section-pub-list a {
+    color: var(--tc-primary);
+  }
+  .section-pub-list a:hover {
+    color: var(--tc-text);
+  }
+  .btn-outline-primary {
+    color: var(--tc-primary) !important;
+    border-color: var(--tc-primary) !important;
+  }
+  .btn-outline-primary:hover {
+    background: var(--tc-primary) !important;
+    color: white !important;
   }
 </style>

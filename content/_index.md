@@ -24,7 +24,7 @@ sections:
         With over a decade of experience in both academic research and industry applications, I bring a unique perspective that combines theoretical depth with hands-on engineering expertise. My work has resulted in multiple patents and has been published in leading AI conferences and journals.
         
         <div class="cta-container" style="margin-top: 2rem;">
-          <a href="mailto:christos@neuralithmics.com" class="cta-button" style="background: white; color: #667eea !important;">Get in Touch →</a>
+          <a href="mailto:christos@neuralithmics.com" class="cta-button">Get in Touch →</a>
         </div>
 
     design:
