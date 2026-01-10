@@ -214,7 +214,7 @@ sections:
         </div>
         
         <div class="metric-card">
-          <div class="metric-number">3</div>
+          <div class="metric-number">2</div>
           <div class="metric-label">US Patents</div>
           <div class="metric-detail">Conversational AI & Chatbot Technologies</div>
         </div>

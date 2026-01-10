@@ -4,7 +4,7 @@ authors:
   - Christos Melidis
   - Davide Marocco
 date: "2015-01-01"
-doi: ""
+doi: "10.1109/SMC.2015.427"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2015-01-01"
@@ -19,7 +19,7 @@ publication_types: ["1"]
 publication: "IEEE International Conference on Systems, Man, and Cybernetics"
 publication_short: "IEEE SMC"
 
-abstract: "This paper introduces a novel human-centric approach to robotic control that prioritizes user experience and natural interaction over traditional programming paradigms. By analyzing how humans naturally interact with physical systems, we develop control interfaces that leverage intuitive movement patterns and cognitive models. The research demonstrates how human-centric design principles can significantly reduce the learning curve for robot operators while improving task performance and user satisfaction. Experimental results from user studies show marked improvements in task completion times and reduced cognitive load compared to conventional control interfaces."
+abstract: "This paper introduces a novel human-centric approach to robotic control inspired by behaviour-based robotics and self-organisation principles. We present a control mechanism that adapts to both the user and the robot, facilitating intuitive control without requiring users to learn specific operational procedures. The architecture enables users to shape control patterns according to their preferences, moving away from traditional methods that necessitate understanding complex manuals. By coupling intuitive human behaviours with machine dynamics, the system identifies control patterns for various robotic forms and integrates them with user inputs, regardless of the input device. The proposed approach suggests a paradigm shift in robotic control, introducing a new level in the taxonomy of human-in-the-loop systems. Experimental results demonstrate marked improvements in task completion times and reduced cognitive load compared to conventional control interfaces."
 
 # Summary. An optional shortened abstract.
 summary: "A human-centric approach to designing robotic control interfaces presented at IEEE SMC in Kowloon, Hong Kong, emphasizing natural interaction patterns and improved user experience."

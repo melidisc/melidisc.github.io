@@ -42,7 +42,7 @@ sections:
         
         **[Ada Support LTD](https://www.ada.cx/)** | Feb 2024 - Present | 📍 Toronto, Canada [Remote]
         
-        Leading Generative AI efforts through Applied Research. Work resulted in 3 patents related to Conversational AI technologies.
+        Leading Generative AI efforts through Applied Research. Work resulted in 2 patents related to Conversational AI technologies.
         
         **Key Achievements:**
         - 🤖 Agent-based Conversation Modelling
@@ -84,7 +84,7 @@ sections:
         
         **[Ada Support LTD](https://www.ada.cx/)** | Aug 2021 - Feb 2024 | 📍 Toronto, Canada [Remote]
         
-        Led Generative AI efforts through applied research. Work resulted in 3 patents related to Conversational AI technologies.
+        Led Generative AI efforts through applied research. Work resulted in 2 patents related to Conversational AI technologies.
         
         **Key Achievements:**
         - ✨ Automated Training Questions creation
@@ -286,7 +286,7 @@ sections:
       title: '📊 Career Summary'
       text: |
         
-        **10+ Years** in AI/ML | **9 Companies** | **3 Patents** | **7+ Publications**
+        **10+ Years** in AI/ML | **9 Companies** | **2 Patents** | **7+ Publications**
         
     design:
       columns: '1'

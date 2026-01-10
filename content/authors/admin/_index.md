@@ -16,9 +16,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:christos@neuralithmics.com'
-  - icon: twitter
+  - icon: x-twitter
     icon_pack: fab
-    link: https://twitter.com/ChristosMelidis
+    link: https://x.com/ChristosMelidis
   - icon: linkedin
     icon_pack: fab
     link: https://linkedin.com/in/christos-melidis
@@ -41,7 +41,7 @@ work:
     date_start: '2024-02-01'
     date_end: ''
     summary: |
-      Leading Generative AI efforts through Applied Research. Work resulted in 3 patents related to Conversational AI technologies. Key projects:
+      Leading Generative AI efforts through Applied Research. Work resulted in 2 patents related to Conversational AI technologies. Key projects:
       - Agent-based Conversation Modelling
       - Testing Methodologies & Performance Evaluation
       - AI Explainability methods
@@ -56,7 +56,7 @@ work:
     date_start: '2021-08-01'
     date_end: '2024-02-01'
     summary: |
-      Led Generative AI efforts through Applied Research. Work resulted in 3 patents related to Conversational AI technologies:
+      Led Generative AI efforts through Applied Research. Work resulted in 2 patents related to Conversational AI technologies:
       - Automated Training Questions creation
       - Automated Chatbot Creation
       - Ada's Hybrid Chatbot solution

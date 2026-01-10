@@ -4,7 +4,7 @@ authors:
   - Christos Melidis
   - Davide Marocco
 date: "2016-01-01"
-doi: ""
+doi: "10.1109/SMC.2016.7844719"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2016-01-01"
@@ -19,7 +19,7 @@ publication_types: ["1"]
 publication: "IEEE International Conference on Systems, Man, and Cybernetics (SMC)"
 publication_short: "IEEE SMC"
 
-abstract: "This paper presents KURE (Kinematic Universal Remote Interface), a novel human-centered approach to remote robot control. The system allows intuitive control of robotic systems through a natural interface that maps human movement to robot actions. By focusing on kinematic relationships rather than explicit programming, KURE enables more natural human-robot interaction, reducing the learning curve for operators and expanding accessibility for non-expert users."
+abstract: "This paper presents KURE (Kinematic Universal Remote Interface), a novel human-centered paradigm for remote robot control. The system introduces an interfacing mechanism that adapts to both the user and the robotic morphology, creating a transparent connection between operator and robot. KURE allows intuitive control of robotic systems through a natural interface that maps human movement patterns to robot actions without requiring users to learn specific device operations. By focusing on kinematic relationships and self-organisation principles rather than explicit programming, KURE enables more natural human-robot interaction, reducing the learning curve for operators and expanding accessibility for non-expert users. Starting from a tabula rasa basis, the system identifies control patterns for the given robotic morphology and successfully merges them with user control signals, regardless of the input device used. The architecture is evaluated through user studies demonstrating the effectiveness of behaviour coupling in complex control scenarios."
 
 # Summary. An optional shortened abstract.
 summary: "A human-centered remote robot control paradigm using kinematic mapping for intuitive interaction, presented at IEEE SMC in Budapest, Hungary."

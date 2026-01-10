@@ -106,7 +106,7 @@ sections:
         
         ### 🏆 Proven Track Record
         
-        - **3 US Patents** in Conversational AI technologies
+        - **2 US Patents** in Conversational AI technologies
         - **7+ Publications** in top-tier conferences (IEEE, Applied Sciences, Cognitive Processing)
         - **Multiple Production Deployments** serving millions of users
         - **10+ Years** of hands-on AI development

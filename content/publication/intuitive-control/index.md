@@ -5,7 +5,7 @@ authors:
   - Hiroyuki Iizuka
   - Davide Marocco
 date: "2018-01-01"
-doi: ""
+doi: "10.1007/s10339-017-0818-5"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2018-01-01"
@@ -20,7 +20,7 @@ publication_types: ["2"]
 publication: "Cognitive Processing"
 publication_short: ""
 
-abstract: "This paper presents a novel architectural framework for the integration of autonomous adaptive dynamic behaviors in mobile robots that enhances both navigation efficiency and user interaction. The architecture employs a combination of neural network approaches and adaptive algorithms to enable robots to develop increasingly intuitive control interfaces. By analyzing user interaction patterns and environmental factors, the system continuously adapts its behavior to align with user expectations and intentions. This approach significantly reduces the cognitive load on operators while improving task performance metrics. Experimental validation demonstrates how this architecture creates more natural and effective robot control experiences across various usage scenarios."
+abstract: "This paper presents a novel approach to human-robot control inspired by behavior-based robotics and self-organization principles. We introduce an interfacing mechanism capable of adapting to both the user and the robotic morphology, aiming to create a transparent connection between user and robot. This allows for seamless integration of control signals and robot behaviors. Unlike traditional systems where users must adapt to specific interfaces and control paradigms, this architecture enables users to shape control motifs according to their preferences, eliminating the need to learn specific device operations. Starting from a tabula rasa basis, the system identifies control patterns (behaviors) for the given robotic morphology and successfully merges them with user control signals, regardless of the input device used. The structural components of the interface are presented and assessed both individually and as a whole, highlighting inherent and emergent properties of the architecture. Overall, this paradigm of control underscores the potential for a shift in robotic control approaches and introduces a new level in the taxonomy of human-in-the-loop systems."
 
 # Summary. An optional shortened abstract.
 summary: "An architectural framework for integrating autonomous adaptive dynamic behaviors in mobile robots, published in Cognitive Processing journal, focusing on intuitive control and reduced cognitive load for operators."
