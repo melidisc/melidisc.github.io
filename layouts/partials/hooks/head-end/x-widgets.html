@@ -1,0 +1,28 @@
+{{ if and (.Params.x_timeline) (not .Site.Config.Privacy.Twitter.Disable) (not .Site.Config.Privacy.Twitter.Simple) }}
+<script>
+  (function() {
+    function initXWidgets() {
+      if (window.twttr && window.twttr.widgets && window.twttr.widgets.load) {
+        window.twttr.widgets.load();
+        return;
+      }
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = "https://platform.twitter.com/widgets.js";
+      script.charset = "utf-8";
+      script.onload = function() {
+        if (window.twttr && window.twttr.widgets && window.twttr.widgets.load) {
+          window.twttr.widgets.load();
+        }
+      };
+      document.head.appendChild(script);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initXWidgets, { once: true });
+    } else {
+      initXWidgets();
+    }
+  })();
+</script>
+{{ end }}

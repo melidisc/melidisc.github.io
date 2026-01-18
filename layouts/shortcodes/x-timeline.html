@@ -1,0 +1,8 @@
+{{- if not .Site.Config.Privacy.Twitter.Disable -}}
+{{- $username := .Get "username" | default "ChristosMelidis" -}}
+
+<a class="twitter-timeline"
+  href="https://twitter.com/{{ $username }}">
+  Posts by @{{ $username }}
+</a>
+{{- end -}}

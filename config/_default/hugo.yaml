@@ -50,6 +50,14 @@ markup:
   _merge: deep
   highlight:
     lineNos: false
+privacy:
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: false
+services:
+  twitter:
+    disableInlineCSS: true
 security:
   _merge: deep
 sitemap:

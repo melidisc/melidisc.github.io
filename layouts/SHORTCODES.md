@@ -55,6 +55,21 @@ Used for displaying consistent publication links and resources.
 >\}\}
 ```
 
+### X Timeline
+
+Used for embedding a profile timeline from X.
+
+```
+\{\{< x-timeline
+  username="ChristosMelidis"
+  height="800"
+  theme="light"
+  chrome="noheader nofooter noborders transparent"
+  limit="5"
+  aria="polite"
+>\}\}
+```
+
 ## Custom Partials
 
 ### Citation View
