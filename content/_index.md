@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: "6rem"
+  spacing: "5rem"
 
 sections:
   - block: markdown
@@ -13,18 +13,16 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        <div style="text-align: center; margin-bottom: 2rem;">
-          <img src="/images/neuralithmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 500px; width: 100%; height: auto; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <img src="/images/neuralithmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 400px; width: 100%; height: auto; margin: 0 auto;">
         </div>
         
-        ### Transforming AI Research into Production-Ready Solutions
+        ## I help companies ship AI products faster
         
-        **Neuralithmics** is my consulting practice, offering specialized expertise in Artificial Intelligence and Machine Learning to help organizations bridge the gap between cutting-edge research and practical implementation.
+        From LLM-powered chatbots to voice biometrics, I turn complex AI research into production systems that work at scale.
         
-        With over a decade of experience in both academic research and industry applications, I bring a unique perspective that combines theoretical depth with hands-on engineering expertise. My work has resulted in multiple patents and has been published in leading AI conferences and journals.
-        
-        <div class="cta-container" style="margin-top: 2rem;">
-          <a href="mailto:christos@neuralithmics.com" class="cta-button">Get in Touch →</a>
+        <div class="cta-container" style="margin-top: 1.5rem;">
+          <a href="mailto:christos@neuralithmics.com" class="cta-button">Book a Discovery Call →</a>
         </div>
 
     design:
@@ -33,140 +31,127 @@ sections:
 
   - block: markdown
     content:
-      title: 'Services Offered'
+      title: ''
       text: |-
-        ## 🎯 Conversational AI & Chatbot Development
-        
-        Design and implementation of advanced conversational AI systems, including:
-        - **LLM Integration & Fine-tuning**: Custom large language model deployment and optimization
-        - **Hybrid Chatbot Solutions**: Combining rule-based and AI-driven approaches
-        - **Agent-based Conversation Modeling**: Multi-agent systems for complex dialogues
-        - **Knowledge Management Systems**: RAG (Retrieval-Augmented Generation) implementations
-        
-        ---
-        
-        ## 🔬 Applied AI Research & Development
-        
-        Transform research ideas into production-ready solutions:
-        - **Research Translation**: Converting academic papers into working prototypes
-        - **Novel Architecture Design**: Custom neural network architectures for specific use cases
-        - **Performance Optimization**: Model compression, quantization, and deployment strategies
-        - **AI Explainability**: Implementing interpretable AI systems for regulated industries
-        
-        ---
-        
-        ## 🗣️ Natural Language Processing & Voice Technologies
-        
-        End-to-end NLP and speech solutions:
-        - **Text Classification & NER**: Custom models for domain-specific applications
-        - **Sentiment Analysis**: Advanced emotion and intent detection systems
-        - **Voice Biometrics**: Speaker identification and verification systems
-        - **Speech Recognition**: Custom ASR model development and optimization
-        
-        ---
-        
-        ## 🤖 Robotics & Control Systems
-        
-        Intelligent robot control and human-robot interaction:
-        - **Adaptive Control Interfaces**: Intuitive robot control systems
-        - **Sensor Fusion**: Multi-modal data integration for robotic systems
-        - **Human-Robot Interaction**: Natural and effective interaction paradigms
-        - **Autonomous Navigation**: Path planning and obstacle avoidance
-        
-        ---
-        
-        ## 📊 AI Strategy & Technical Leadership
-        
-        Strategic guidance for AI initiatives:
-        - **AI Roadmap Development**: Planning and prioritizing AI projects
-        - **Team Building & Training**: Upskilling teams in ML/AI technologies
-        - **Technology Evaluation**: Assessing tools, frameworks, and approaches
-        - **Research-to-Production Pipelines**: Establishing workflows for AI development
-        
+        <div class="social-proof-section">
+          <p style="font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Trusted by teams at</p>
+          
+          <div class="company-logos">
+            <a href="https://www.ada.cx/" target="_blank">Ada</a>
+            <span class="logo-separator">·</span>
+            <a href="https://omilia.com/" target="_blank">Omilia</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.curationzone.com/" target="_blank">Curation Zone</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.linkedbusiness.eu/" target="_blank">LinkedBusiness</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.plymouth.ac.uk/" target="_blank">University of Plymouth</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.unina.it/" target="_blank">University of Naples</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.auth.gr/" target="_blank">Aristotle University</a>
+          </div>
+          
+          <div class="stats-badges">
+            <span class="stats-badge"><strong>2</strong> US Patents</span>
+            <span class="stats-badge"><strong>7+</strong> Publications</span>
+            <span class="stats-badge"><strong>10+</strong> Years in AI/ML</span>
+          </div>
+        </div>
     design:
       columns: '1'
+      css_class: social-proof-section
 
   - block: markdown
     content:
-      title: 'Why Work With Me?'
+      title: 'What I Do'
       text: |-
-        ### 🎓 Academic Foundation + Industry Experience
+        <div class="services-grid">
         
-        PhD in AI & Robotics from University of Plymouth, combined with extensive industry experience at leading tech companies. This dual perspective ensures solutions that are both theoretically sound and practically viable.
+        ### 🎯 Conversational AI & LLMs
         
-        ### 🏆 Proven Track Record
+        Build production-ready chatbots, RAG systems, and LLM-powered applications. From fine-tuning to deployment, I've shipped solutions serving millions of users.
         
-        - **2 US Patents** in Conversational AI technologies
-        - **7+ Publications** in top-tier conferences (IEEE, Applied Sciences, Cognitive Processing)
-        - **Multiple Production Deployments** serving millions of users
-        - **10+ Years** of hands-on AI development
+        ---
         
-        ### 🔧 Full-Stack AI Expertise
+        ### 🗣️ Voice & NLP Systems
         
-        From initial concept and requirements gathering through architecture design, implementation, testing, and deployment. I can guide your project through every phase of the AI development lifecycle.
+        End-to-end voice and text AI: speech recognition, voice biometrics, sentiment analysis, and custom NLP pipelines for your domain.
         
-        ### 🚀 Research-to-Production Focus
+        ---
         
-        Specialized in translating cutting-edge research into scalable, production-ready systems. I ensure that innovative ideas don't remain theoretical but deliver real business value.
+        ### 🔬 Research to Production
         
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: 'Technologies & Frameworks'
-      text: |-
-        ### Core ML/AI Frameworks
-        - **PyTorch** • **TensorFlow** • **Keras** • **Theano**
+        Turn academic papers and prototypes into scalable systems. I bridge the gap between cutting-edge research and real-world implementation.
         
-        ### LLM & NLP Tools
-        - **Hugging Face Transformers** • **LangChain** • **OpenAI API** • **Anthropic Claude**
-        
-        ### Programming & Development
-        - **Python** • **C/C++** • **JavaScript** • **Bash**
-        
-        ### Data & Infrastructure
-        - **SQL/NoSQL** • **MongoDB** • **Redis** • **Docker** • **Kubernetes**
-        - **AWS** • **GCP** • **Azure**
-        
-        ### Specialized Tools
-        - **CUDA** • **DialogFlow** • **Rasa** • **Spark** • **Hadoop**
-        
-    design:
-      columns: '2'
-
-  - block: markdown
-    content:
-      title: 'Get In Touch'
-      text: |-
-        Ready to discuss your AI project or need expert guidance on machine learning challenges?
-        
-        <div class="cta-container">
-          <a href="mailto:christos@neuralithmics.com" class="cta-button">📧 Schedule a Discovery Call</a>
         </div>
         
-        ---
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/services/" class="cta-button-secondary">View All Services →</a>
+        </div>
         
-        ### 📧 Contact Information
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: 'Results I Deliver'
+      text: |-
+        <div class="results-section">
         
-        **Email:** [christos@neuralithmics.com](mailto:christos@neuralithmics.com)  
-        **LinkedIn:** [linkedin.com/in/christos-melidis](https://linkedin.com/in/christos-melidis)  
-        **Location:** Thessaloniki, Greece (Remote work available globally)
+        **At Ada Support**, I spearheaded R&D projects that led to their Generative AI chatbot platform—now serving millions of customer interactions. My work resulted in 2 US patents for conversational AI.
         
-        ---
+        **At Omilia**, I designed voice biometrics and speech recognition systems for enterprise contact centers.
         
-        ### 📅 Consultation Process
+        **In academia**, my PhD research on neural network architectures for robotics produced 7+ publications in IEEE and Springer journals.
         
-        1. **Initial Discovery Call** - Discuss your needs and challenges (30 min, free)
-        2. **Proposal & Scope** - Detailed project proposal with timeline and deliverables
-        3. **Engagement** - Flexible engagement models (hourly, project-based, retainer)
-        4. **Delivery & Support** - Implementation with ongoing support options
+        </div>
         
-        ---
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/work/" class="cta-button-secondary">See My Work →</a>
+          <a href="/publication/" class="cta-button-secondary">View Publications →</a>
+        </div>
         
-        <div class="cta-container">
-          <a href="/about/" class="cta-button-secondary">Learn More About Me</a>
-          <a href="/publication/" class="cta-button-secondary">View Publications</a>
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: 'How We Work Together'
+      text: |-
+        <div class="process-section">
+        
+        **1. Discovery Call** — 30-minute call to understand your challenges (free)
+        
+        **2. Proposal** — Detailed scope, approach, and timeline within a week
+        
+        **3. Engagement** — Flexible models: hourly, project-based, or retainer
+        
+        **4. Delivery** — Implementation with ongoing support options
+        
+        </div>
+        
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: ''
+      text: |-
+        <div class="cta-final" style="text-align: center; padding: 2rem 0;">
+        
+        ## Ready to accelerate your AI project?
+        
+        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Let's discuss how I can help you ship faster.</p>
+        
+        <a href="mailto:christos@neuralithmics.com" class="cta-button">Book a Discovery Call →</a>
+        
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">
+          <a href="mailto:christos@neuralithmics.com">christos@neuralithmics.com</a> · 
+          <a href="https://linkedin.com/in/christos-melidis" target="_blank">LinkedIn</a> · 
+          Thessaloniki, Greece (Remote globally)
+        </p>
+        
         </div>
         
     design:
