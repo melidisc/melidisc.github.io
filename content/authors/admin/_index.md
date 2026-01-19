@@ -1,16 +1,16 @@
 ---
 title: Christos Melidis, PhD
-role: Staff Machine Learning Scientist - R&D | Ada Support
-bio: Machine Learning Scientist with over a decade of experience in AI, specializing in Conversational AI, including Speech, Natural Language Processing and Generation. With a PhD in Computer Science, focused on innovative Neural Network architectures for Robotics, I excel at transforming cutting-edge research into practical, real-world applications.
+role: AI & Machine Learning Consultant
+bio: AI & Machine Learning Consultant with 10+ years experience, 2 US patents, and systems serving millions of users. I help companies build and ship AI products—from Agentic AI and LLM applications to Voice Technologies and B2B Intelligence solutions. PhD in Computer Science with expertise in transforming cutting-edge research into production-ready systems.
 
 interests:
-  - Machine Learning & AI Development
-  - Large Language Models (LLMs)
-  - Natural Language Processing (NLP)
-  - Deep Neural Networks
-  - Robotics & Control Systems
-  - Voice Technologies
-  - Generative AI
+  - Agentic AI & Multi-Agent Systems
+  - LLM Applications & MCP Servers
+  - RAG Systems & Knowledge Management
+  - Conversational AI & Chatbots
+  - Voice Biometrics & Speech Recognition
+  - B2B Intelligence & Data Products
+  - AI Strategy & Technical Leadership
 
 social:
   - icon: envelope
@@ -33,8 +33,8 @@ social:
     link: https://plymouth.academia.edu/ChristosMelidis
 
 organizations:
-  - name: Ada Support LTD
-    url: 'https://www.ada.cx/'
+  - name: Neuralithmics
+    url: 'https://neuralithmics.com/'
 
 work:
   - position: Staff Machine Learning Scientist - R&D
@@ -163,4 +163,4 @@ superuser: true
 highlight_name: true
 ---
 
-My role often bridges research and production, guiding projects from idea to deployment. This involves everything from initial concept development and requirements gathering with Product teams, to hands-on coding with Engineering teams. Driven by a passion for innovation and a commitment to excellence, I strive to stay at the leading edge of Generative and Conversational AI, delivering solutions that make a difference.
+I help companies build and ship AI products—from initial research through production deployment. My work bridges research and production, guiding projects from idea to deployment. This involves everything from initial concept development and proof-of-concept validation to hands-on implementation and cross-functional team collaboration. Driven by a passion for innovation and a commitment to excellence, I deliver AI solutions that create real business impact.
