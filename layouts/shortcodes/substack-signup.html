@@ -1,0 +1,13 @@
+{{/* Substack signup embed shortcode */}}
+{{/* Usage: {{< substack-signup url="https://yourname.substack.com/embed" >}} */}}
+<div class="substack-signup-container" style="margin: 2rem 0;">
+  <iframe
+    src="{{ .Get "url" }}"
+    width="{{ .Get "width" | default "100%" }}"
+    height="{{ .Get "height" | default "150" }}"
+    style="border: 1px solid #EEE; background: white; border-radius: 8px;"
+    frameborder="0"
+    scrolling="no"
+    loading="lazy"
+  ></iframe>
+</div>

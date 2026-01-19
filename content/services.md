@@ -11,27 +11,28 @@ sections:
       title: 'Services'
       subtitle: 'AI & Machine Learning Consulting'
       text: |-
-        I help companies build and ship AI products—from initial research through production deployment. With 10+ years of experience, 2 US patents, and systems serving millions of users, I bring both academic rigor and proven production results.
+        I help companies build and ship AI products—from Agentic AI systems through production deployment. With 10+ years of experience, 2 US patents, and systems serving millions of users, I bring both academic rigor and proven production results.
     design:
       columns: '1'
       css_class: header-section
 
   - block: markdown
     content:
-      title: '🎯 Conversational AI & LLM Applications'
+      title: '🎯 Agentic AI & LLM Applications'
       text: |-
-        Build production-ready conversational AI systems that scale. I've shipped chatbots serving millions of users and hold **2 US patents** in this space.
+        Build production-ready AI agent systems that scale. I've shipped chatbots serving millions of users and hold **2 US patents** in this space.
         
         **What I deliver:**
         
-        - **AI Agent Platforms** — Modular, LLM-based systems optimizing model allocation for cost and performance
+        - **Agentic AI Systems** — Autonomous agents that reason, plan, and execute multi-step tasks
+        - **MCP Server Integration** — Model Context Protocol implementations for tool use and external system connectivity
+        - **Multi-Agent Architectures** — Orchestrated agent systems for complex conversational workflows
         - **RAG & Knowledge Management** — Context management pipelines that improve retrieval accuracy (80%→90%+ proven results)
         - **Generative Reply & Action Systems** — Integrating retrieval, moderation, and query rewriting
         - **Automated Workflow Generation** — Playbooks and SOP frameworks with <1% adherence error
-        - **Hybrid Chatbot Solutions** — Combining rule-based reliability with generative AI flexibility
         - **AI Explainability & Testing** — Interpretable systems with robust evaluation methodologies
         
-        **Ideal for:** Companies building customer support bots, knowledge assistants, or any LLM-powered product.
+        **Ideal for:** Companies building AI agents, customer support bots, knowledge assistants, or any LLM-powered product.
         
     design:
       columns: '1'

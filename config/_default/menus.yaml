@@ -4,22 +4,16 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
-    url: /
-    weight: 10
   - name: Services
     url: /services/
+    weight: 10
+  - name: About
+    url: /about/
     weight: 20
-  - name: Work
-    url: /work/
+  - name: Blog
+    url: /blog/
     weight: 30
-  - name: Publications
-    url: /publication/
-    weight: 40
-  - name: Credentials
-    url: /credentials/
-    weight: 50
   - name: Contact
     url: "mailto:christos@neuralithmics.com"
-    weight: 60
+    weight: 40
   
