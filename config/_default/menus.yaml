@@ -13,10 +13,13 @@ main:
   - name: Work
     url: /work/
     weight: 30
+  - name: Publications
+    url: /publication/
+    weight: 40
   - name: Credentials
     url: /credentials/
-    weight: 40
+    weight: 50
   - name: Contact
     url: "mailto:christos@neuralithmics.com"
-    weight: 50
+    weight: 60
   

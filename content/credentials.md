@@ -73,73 +73,19 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 Journal Publications'
+      title: '📚 Publications & Research'
       text: |-
-        ### Effective Behavioural Dynamic Coupling through Echo State Networks
+        7+ publications in top venues including IEEE, Springer, and Applied Sciences. Research spans neural network architectures, human-robot interaction, conversational AI, and healthcare applications.
         
-        **Melidis, C., & Marocco, D.** (2019)  
-        *Applied Sciences*, 9(7), 1300.
+        **Key Research Themes:**
+        - 🧠 **Neural Network Architectures** — Echo State Networks, RNNs, adaptive systems
+        - 🤖 **Human-Robot Interaction** — Intuitive control interfaces (KURE system)
+        - 💬 **Conversational AI** — Chatbot generation and dialogue systems
+        - 🏥 **Healthcare AI** — Machine learning for functional disorders
         
-        Explores Echo State Networks for behavioral dynamic coupling in robotics, enhancing adaptability through novel neural architectures.
-        
-        ---
-        
-        ### A test of the adaptive network explanation of functional disorders using a machine learning analysis of symptoms
-        
-        **Melidis, C., Denham, S. L., & Hyland, M. E.** (2017)  
-        *Biosystems*
-        
-        Machine learning analysis validating adaptive network theory for understanding functional disorders—novel applications of AI in healthcare.
-        
-        ---
-        
-        ### Intuitive control of mobile robots: an architecture for autonomous adaptive dynamic behaviour integration
-        
-        **Melidis, C., Iizuka, H. & Marocco, D.** (2017)  
-        *Cognitive Processing*, Springer · doi: 10.1007/s10339-017-0818-5
-        
-        Novel architectural framework for integrating autonomous adaptive behaviors in mobile robots.
-        
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: '🎤 Conference Papers'
-      text: |-
-        ### KURE: Kinematic universal remote interface
-        
-        **C. Melidis and D. Marocco** (2016)  
-        *IEEE International Conference on Systems, Man, and Cybernetics (SMC)* · Budapest, Hungary
-        
-        Human-centered remote interface for intuitive robot control.
-        
-        ---
-        
-        ### KURE: a Two-Way Adaptive System for Intuitive Robot Control
-        
-        **C. Melidis and D. Marocco** (2016)  
-        *IEEE RO-MAN Workshop on Behavior Adaptation* · New York City, USA
-        
-        Bidirectional adaptive system enabling mutual adaptation between human operators and robotic systems.
-        
-        ---
-        
-        ### A Human Centric Approach to Robotic Control
-        
-        **C. Melidis and D. Marocco** (2015)  
-        *IEEE International Conference on Systems, Man, and Cybernetics* · Hong Kong · doi: 10.1109/SMC.2015.427
-        
-        Control interfaces leveraging intuitive human movement patterns.
-        
-        ---
-        
-        ### An Exploration on Intuitive Interfaces for Robot Control Based on Self Organisation
-        
-        **Melidis C., Marocco D.** (2015)  
-        *Artificial Life and Intelligent Agents (ALIA 2014)* · Springer · Bangor, Wales, UK
-        
-        Self-organization principles in designing intuitive robot control interfaces.
+        <div style="margin-top: 1.5rem;">
+          <a href="/publication/" class="cta-button-secondary">View All Publications →</a>
+        </div>
         
     design:
       columns: '1'

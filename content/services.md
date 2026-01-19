@@ -11,7 +11,7 @@ sections:
       title: 'Services'
       subtitle: 'AI & Machine Learning Consulting'
       text: |-
-        I help companies build and ship AI products—from initial research through production deployment. Whether you need hands-on implementation or strategic guidance, I bring both academic rigor and real-world experience.
+        I help companies build and ship AI products—from initial research through production deployment. With 10+ years of experience, 2 US patents, and systems serving millions of users, I bring both academic rigor and proven production results.
     design:
       columns: '1'
       css_class: header-section
@@ -20,15 +20,16 @@ sections:
     content:
       title: '🎯 Conversational AI & LLM Applications'
       text: |-
-        Build production-ready conversational AI systems that scale. I've shipped chatbots serving millions of users and hold 2 US patents in this space.
+        Build production-ready conversational AI systems that scale. I've shipped chatbots serving millions of users and hold **2 US patents** in this space.
         
         **What I deliver:**
         
-        - **LLM Integration & Fine-tuning** — Custom deployment and optimization of large language models for your use case
-        - **RAG Systems** — Retrieval-Augmented Generation implementations that ground LLMs in your knowledge base
-        - **Hybrid Chatbot Solutions** — Combining rule-based reliability with AI flexibility
-        - **Agent-based Systems** — Multi-agent architectures for complex conversational workflows
-        - **AI Explainability** — Interpretable systems for regulated industries
+        - **AI Agent Platforms** — Modular, LLM-based systems optimizing model allocation for cost and performance
+        - **RAG & Knowledge Management** — Context management pipelines that improve retrieval accuracy (80%→90%+ proven results)
+        - **Generative Reply & Action Systems** — Integrating retrieval, moderation, and query rewriting
+        - **Automated Workflow Generation** — Playbooks and SOP frameworks with <1% adherence error
+        - **Hybrid Chatbot Solutions** — Combining rule-based reliability with generative AI flexibility
+        - **AI Explainability & Testing** — Interpretable systems with robust evaluation methodologies
         
         **Ideal for:** Companies building customer support bots, knowledge assistants, or any LLM-powered product.
         
@@ -43,11 +44,12 @@ sections:
         
         **What I deliver:**
         
-        - **Voice Biometrics** — Speaker identification and verification systems
-        - **Speech Recognition** — Custom ASR models optimized for your domain
-        - **Text Classification & NER** — Domain-specific models for categorization and entity extraction
-        - **Sentiment Analysis** — Advanced emotion and intent detection
+        - **Voice Biometrics** — Speaker identification and verification systems with anti-spoofing
+        - **Speech Recognition** — Custom ASR models optimized for your domain using Transformer architectures
+        - **Emotion Recognition** — Advanced affect detection from voice and text
         - **Diarization** — Speaker separation for multi-party conversations
+        - **Text Classification & NER** — Domain-specific models using BERT, ELMo, and modern architectures
+        - **Sentiment Analysis** — Fine-grained intent and emotion detection
         
         **Ideal for:** Contact centers, security applications, media companies, and healthcare providers.
         
@@ -63,9 +65,10 @@ sections:
         **What I deliver:**
         
         - **Research Translation** — Converting academic papers into working prototypes
+        - **Rapid Proof-of-Concept** — Validate technical feasibility and business value quickly
         - **Novel Architecture Design** — Custom neural network architectures for specific use cases
-        - **Performance Optimization** — Model compression, quantization, and efficient deployment
-        - **Proof of Concept Development** — Rapid prototyping to validate AI approaches
+        - **ML Pipeline Development** — End-to-end pipelines for scoring, recommendation, and data management
+        - **Cross-functional Integration** — Embedding models into production systems with accuracy and scalability
         - **Technical Due Diligence** — Evaluating AI claims and feasibility for investors
         
         **Ideal for:** Startups, R&D teams, and investors evaluating AI technology.
@@ -75,18 +78,19 @@ sections:
 
   - block: markdown
     content:
-      title: '🤖 Robotics & Control Systems'
+      title: '📈 B2B Intelligence & Data Products'
       text: |-
-        Intelligent robot control and human-robot interaction, backed by my PhD research and multiple IEEE publications.
+        AI-powered solutions for business intelligence, lead scoring, and data enrichment—proven in FinTech and enterprise contexts.
         
         **What I deliver:**
         
-        - **Adaptive Control Interfaces** — Intuitive robot control systems that learn from users
-        - **Human-Robot Interaction** — Natural and effective interaction paradigms
-        - **Sensor Fusion** — Multi-modal data integration for robotic systems
-        - **Autonomous Navigation** — Path planning and obstacle avoidance
+        - **Entity Recognition & Extraction** — Automated identification of companies, people, and relationships
+        - **Lead Scoring Systems** — ML models that prioritize high-value prospects
+        - **Automated Data Enrichment** — Intelligent augmentation of business records
+        - **KYC/Compliance Automation** — AI-assisted verification and risk assessment
+        - **Recommendation Systems** — Personalized suggestions for products, content, or connections
         
-        **Ideal for:** Robotics companies, manufacturing automation, and research labs.
+        **Ideal for:** FinTech companies, B2B platforms, data providers, and enterprise sales teams.
         
     design:
       columns: '1'
@@ -95,14 +99,15 @@ sections:
     content:
       title: '📊 AI Strategy & Technical Leadership'
       text: |-
-        Strategic guidance for AI initiatives, from roadmap planning to team building.
+        Strategic guidance for AI initiatives, from roadmap planning to hands-on implementation leadership.
         
         **What I deliver:**
         
-        - **AI Roadmap Development** — Planning and prioritizing AI projects for maximum impact
-        - **Team Building & Training** — Upskilling your team in ML/AI technologies
+        - **AI Roadmap Development** — Planning and prioritizing AI projects for maximum ROI
+        - **End-to-End Project Leadership** — Conception, design, and implementation of ML-based product improvements
         - **Technology Evaluation** — Assessing tools, frameworks, and vendor solutions
-        - **Research-to-Production Pipelines** — Establishing workflows for sustainable AI development
+        - **Team Collaboration** — Leading cross-functional teams to embed AI into production systems
+        - **Feature Roadmap Shaping** — Data-driven prioritization to accelerate time-to-market
         - **Technical Advisory** — Ongoing guidance for AI product decisions
         
         **Ideal for:** Companies starting their AI journey or scaling existing capabilities.

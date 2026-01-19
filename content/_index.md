@@ -33,17 +33,30 @@ sections:
     content:
       title: ''
       text: |-
-        <div class="social-proof" style="text-align: center; padding: 2rem 0;">
-          <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">Trusted by teams at</p>
-          <p style="font-size: 1.1rem; font-weight: 500;">
-            <a href="https://www.ada.cx/" target="_blank">Ada</a> · 
-            <a href="https://omilia.com/" target="_blank">Omilia</a> · 
-            University of Plymouth · 
-            University of Naples
-          </p>
-          <p style="margin-top: 1.5rem; font-size: 1rem; color: #444;">
-            <strong>2 US Patents</strong> · <strong>7+ Publications</strong> · <strong>10+ Years</strong> in AI/ML
-          </p>
+        <div class="social-proof-section">
+          <p style="font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Trusted by teams at</p>
+          
+          <div class="company-logos">
+            <a href="https://www.ada.cx/" target="_blank">Ada</a>
+            <span class="logo-separator">·</span>
+            <a href="https://omilia.com/" target="_blank">Omilia</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.curationzone.com/" target="_blank">Curation Zone</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.linkedbusiness.eu/" target="_blank">LinkedBusiness</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.plymouth.ac.uk/" target="_blank">University of Plymouth</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.unina.it/" target="_blank">University of Naples</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.auth.gr/" target="_blank">Aristotle University</a>
+          </div>
+          
+          <div class="stats-badges">
+            <span class="stats-badge"><strong>2</strong> US Patents</span>
+            <span class="stats-badge"><strong>7+</strong> Publications</span>
+            <span class="stats-badge"><strong>10+</strong> Years in AI/ML</span>
+          </div>
         </div>
     design:
       columns: '1'
@@ -86,7 +99,7 @@ sections:
       text: |-
         <div class="results-section">
         
-        **At Ada Support**, I led the R&D team that built their Generative AI chatbot platform—now serving millions of customer interactions. My work resulted in 2 US patents for conversational AI.
+        **At Ada Support**, I spearheaded R&D projects that led to their Generative AI chatbot platform—now serving millions of customer interactions. My work resulted in 2 US patents for conversational AI.
         
         **At Omilia**, I designed voice biometrics and speech recognition systems for enterprise contact centers.
         
@@ -96,6 +109,7 @@ sections:
         
         <div style="text-align: center; margin-top: 2rem;">
           <a href="/work/" class="cta-button-secondary">See My Work →</a>
+          <a href="/publication/" class="cta-button-secondary">View Publications →</a>
         </div>
         
     design:
