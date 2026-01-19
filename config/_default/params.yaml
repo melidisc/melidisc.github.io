@@ -5,16 +5,16 @@
 
 # Appearance
 appearance:
-  mode: system
+  mode: light
   color: emerald
 
 # SEO
 marketing:
   seo:
-    site_type: Person
+    site_type: LocalBusiness
     local_business_type: 'ProfessionalService'
     org_name: 'Neuralithmics'
-    description: 'AI & Machine Learning Consultant with 10+ years experience, 2 US patents, and systems serving millions of users. Specializing in Agentic AI, LLM Applications, RAG Systems, MCP Servers, Conversational AI, Voice Biometrics, and B2B Intelligence. Helping companies ship AI products from research to production.'
+    description: 'AI and machine learning consultant with 10+ years experience, 2 US patents, and systems serving millions. Builds agentic AI, LLM apps, and RAG.'
     twitter: 'ChristosMelidis'
     image: 'images/site-thumbnail.png'
   analytics:

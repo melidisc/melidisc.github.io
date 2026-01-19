@@ -16,6 +16,27 @@ This site uses Hugo with Hugo Blox (Academic CV). Most content is Markdown in `c
 - Custom styles: `layouts/partials/hooks/head-end/custom-styles.html`
 - Custom shortcodes reference: `layouts/SHORTCODES.md`
 
+## Current site structure (consulting-focused)
+
+- Homepage: `content/_index.md`
+- Services (lead-gen): `content/services.md`
+- About (combined): `content/about.md`
+  - Intro/credentials at the top
+  - Quick navigation buttons (anchors)
+  - Work experience
+  - Publications summary (linking to the full publications page)
+  - Education
+- Blog (Substack landing): `content/blog.md`
+- Publications (canonical full list): `content/publication/_index.md` and `content/publication/<slug>/index.md`
+
+## Session learnings / gotchas
+
+- **Publications formatting**: embedding a `collection` block inside the combined About page may render as unformatted concatenated text. Prefer a curated “Selected publications” list plus a link to `/publication/` for the full list.
+- **Substack posts**: for visible post previews, use Stackblocks embed (`<div class="stackblocks-embed" ...></div>` + `https://frame.stackblocks.app/frame.js`) rather than the Substack `/embed` iframe (signup only).
+- **Hero logo asset**: use the widescreen PNG `static/images/neuralithmics_logo_wide.png` on the homepage hero to avoid stretching/cropping the original logo.
+- **Site width**: global width changes live in `layouts/partials/hooks/head-end/custom-styles.html`.
+- **Menu philosophy**: keep the main menu compressed for conversion (currently Services / About / Blog / Contact in `config/_default/menus.yaml`).
+
 ## How to edit pages
 
 ### Landing pages (`content/_index.md`, `content/about.md`, `content/experience.md`, `content/publication/_index.md`)

@@ -14,7 +14,7 @@ sections:
       subtitle: ''
       text: |-
         <div style="text-align: center; margin-bottom: 1.5rem;">
-          <img src="/images/neuralithmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 400px; width: 100%; height: auto; margin: 0 auto;">
+          <img src="/images/logos/neuralthmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 760px; width: 100%; height: auto; margin: 0 auto;">
         </div>
         
         ## I help companies ship AI products faster
@@ -41,9 +41,9 @@ sections:
             <span class="logo-separator">·</span>
             <a href="https://omilia.com/" target="_blank">Omilia</a>
             <span class="logo-separator">·</span>
-            <a href="https://www.curationzone.com/" target="_blank">Curation Zone</a>
-            <span class="logo-separator">·</span>
             <a href="https://www.linkedbusiness.eu/" target="_blank">LinkedBusiness</a>
+            <span class="logo-separator">·</span>
+            <a href="https://www.curationzone.com/" target="_blank">Curation Zone</a>
             <span class="logo-separator">·</span>
             <a href="https://www.plymouth.ac.uk/" target="_blank">University of Plymouth</a>
             <span class="logo-separator">·</span>
