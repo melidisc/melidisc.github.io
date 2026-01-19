@@ -11,16 +11,28 @@
     --tc-border: #e0d6d0;
   }
 
-  /* ===== Page Width - 80% viewport ===== */
+  /* ===== Page Width - 90% viewport, max 1400px ===== */
   .universal-wrapper,
   .container,
   .page-wrapper > .container,
   main > .container,
   .hb-section > .container {
-    max-width: 80vw !important;
-    width: 80vw !important;
+    max-width: min(90vw, 1400px) !important;
+    width: 90vw !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  
+  /* Even wider on large screens */
+  @media (min-width: 1600px) {
+    .universal-wrapper,
+    .container,
+    .page-wrapper > .container,
+    main > .container,
+    .hb-section > .container {
+      max-width: 1600px !important;
+      width: 85vw !important;
+    }
   }
 
   /* Experience Item Shortcode Styles */
