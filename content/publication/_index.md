@@ -58,6 +58,8 @@ sections:
         
         Explores the use of Echo State Networks for effective behavioral dynamic coupling in robotics, enhancing the adaptability of robotic systems through novel neural architectures.
         
+        [Read full abstract →](/publication/effective-behavioural/)
+        
         ---
         
         ### A test of the adaptive network explanation of functional disorders using a machine learning analysis of symptoms
@@ -66,6 +68,8 @@ sections:
         *Biosystems*
         
         Machine learning analysis validating adaptive network theory for understanding functional disorders, demonstrating novel applications of AI in healthcare diagnostics.
+        
+        [Read full abstract →](/publication/adaptive-network/)
         
         ---
         
@@ -76,6 +80,8 @@ sections:
         doi: 10.1007/s10339-017-0818-5
         
         Presents a novel architectural framework for integrating autonomous adaptive dynamic behaviors in mobile robots, enabling more natural and effective human-robot interactions.
+        
+        [Read full abstract →](/publication/intuitive-control/)
         
         </div>
         
@@ -96,6 +102,8 @@ sections:
         
         Introduces KURE, a kinematic universal remote interface prioritizing human-centered design for intuitive remote robot control.
         
+        [Read full abstract →](/publication/kure-kinematic/)
+        
         ---
         
         ### KURE: a Two-Way Adaptive System for Intuitive Robot Control
@@ -105,6 +113,8 @@ sections:
         IEEE RO-MAN 2016 • New York City, USA
         
         Presents KURE as a bidirectional adaptive system enabling mutual adaptation between human operators and robotic systems.
+        
+        [Read full abstract →](/publication/kure-two-way/)
         
         ---
         
@@ -117,6 +127,8 @@ sections:
         
         Develops control interfaces leveraging intuitive human movement patterns and cognitive models for improved robot operation.
         
+        [Read full abstract →](/publication/human-centric/)
+        
         ---
         
         ### An Exploration on Intuitive Interfaces for Robot Control Based on Self Organisation
@@ -127,6 +139,8 @@ sections:
         Bangor, Wales, UK
         
         Explores self-organization principles in designing intuitive robot control interfaces that adapt to user interaction patterns.
+        
+        [Read full abstract →](/publication/exploration-intuitive/)
         
         </div>
         

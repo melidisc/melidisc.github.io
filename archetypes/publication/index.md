@@ -5,12 +5,9 @@ authors:
 date: "{{ now.Format "2006-01-02" }}"
 doi: ""
 
-# Publication type.
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-# 3 = Preprint / Working Paper
-publication_types: ["0"]
+# Publication type. Must be one of the CSL types the theme has translations for:
+# paper-conference | article-journal | article | report | book | chapter | thesis | patent
+publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""

@@ -14,7 +14,9 @@ sections:
       subtitle: ''
       text: |-
         <div style="text-align: center; margin-bottom: 1.5rem;">
-          <img src="/images/logos/neuralthmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 760px; width: 100%; height: auto; margin: 0 auto;">
+          <span class="hero-logo-wrap">
+            <img src="/images/logos/neuralthmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 760px; width: 100%; height: auto; margin: 0 auto;">
+          </span>
         </div>
         
         ## I help companies ship AI products faster
