@@ -328,6 +328,15 @@
   }
   /* Image displays normally - no filter */
 
+  /* Hero logo: the artwork is dark-on-transparent, so it disappears against
+     the dark-mode background. Give it a permanent light backdrop in dark mode. */
+  .dark .hero-logo-wrap {
+    display: inline-block;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+  }
+
   /* CTA Button Styles */
   .cta-button {
     display: inline-block;
