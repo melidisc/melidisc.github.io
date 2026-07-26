@@ -19,7 +19,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📜 US Patents'
+      title: 'US Patents'
       text: |-
         <div class="patent-list">
         
@@ -47,7 +47,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 Journal Publications'
+      title: 'Journal Publications'
       text: |-
         <div class="publication-list">
         
@@ -90,7 +90,7 @@ sections:
 
   - block: markdown
     content:
-      title: '🎤 Conference Papers & Presentations'
+      title: 'Conference Papers & Presentations'
       text: |-
         <div class="conference-list">
         
@@ -149,7 +149,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📊 Research Impact'
+      title: 'Research Impact'
       text: |-
         <div class="impact-metrics">
         
@@ -177,18 +177,18 @@ sections:
         
         ### Research Themes
         
-        - 🤖 **Human-Robot Interaction** • Intuitive control interfaces and adaptive systems
-        - 🧠 **Neural Network Architectures** • Echo State Networks, RNNs, LSTMs
-        - 💬 **Conversational AI** • Chatbot generation and dialogue systems
-        - 🎯 **Applied Machine Learning** • Healthcare, robotics, NLP applications
+        - **Human-Robot Interaction** • Intuitive control interfaces and adaptive systems
+        - **Neural Network Architectures** • Echo State Networks, RNNs, LSTMs
+        - **Conversational AI** • Chatbot generation and dialogue systems
+        - **Applied Machine Learning** • Healthcare, robotics, NLP applications
         
         ---
         
         ### External Links
         
-        📄 [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis)  
-        🎓 [PhD Thesis - University of Plymouth](https://pearl.plymouth.ac.uk/handle/10026.1/9998)  
-        🔗 [LinkedIn Publications](https://linkedin.com/in/christos-melidis)
+        [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis)  
+        [PhD Thesis - University of Plymouth](https://pearl.plymouth.ac.uk/handle/10026.1/9998)  
+        [LinkedIn Publications](https://linkedin.com/in/christos-melidis)
         
     design:
       columns: '1'

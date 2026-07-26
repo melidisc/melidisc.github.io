@@ -1,14 +1,45 @@
 {{/* Custom Styles for Shortcodes and Components */}}
-{{/* Minimal Terracotta Color Palette */}}
+{{/* Ink + Electric Blue Palette: precise, credible, quietly futuristic */}}
 <style>
   :root {
-    --tc-primary: #a3877e;
-    --tc-secondary: #cbbab3;
-    --tc-light: #e8ddd8;
-    --tc-bg: #faf8f6;
-    --tc-text: #5c5250;
-    --tc-text-light: #8a7f7a;
-    --tc-border: #e0d6d0;
+    --tc-primary: #2563eb;
+    --tc-secondary: #0891b2;
+    --tc-light: #eef4ff;
+    --tc-bg: #f6f8fb;
+    --tc-text: #0f172a;
+    --tc-text-light: #52607a;
+    --tc-border: #e1e7f0;
+    --tc-mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --tc-glow: 0 0 0 1px rgba(37, 99, 235, 0.16), 0 8px 24px -8px rgba(37, 99, 235, 0.35);
+    --tc-grid: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  }
+
+  .dark {
+    --tc-primary: #60a5fa;
+    --tc-secondary: #22d3ee;
+    --tc-light: #111a2e;
+    --tc-bg: #0a0f1c;
+    --tc-text: #e7ecf6;
+    --tc-text-light: #8b96ad;
+    --tc-border: #1e293f;
+    --tc-glow: 0 0 0 1px rgba(96, 165, 250, 0.25), 0 8px 28px -6px rgba(96, 165, 250, 0.45);
+    --tc-grid: radial-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  }
+
+  /* Data-readout style for numbers/stats: monospace, tracked-out, quietly technical */
+  .metric-number,
+  .stats-badge strong,
+  .career-summary strong,
+  .experience-date {
+    font-family: var(--tc-mono);
+    letter-spacing: -0.02em;
+  }
+
+  /* Subtle dot-grid texture on hero/header panels for a technical, mapped-out feel */
+  .header-section,
+  .intro-section {
+    background-image: var(--tc-grid);
+    background-size: 20px 20px;
   }
 
   /* ===== Page Width - 90% viewport, max 1400px ===== */
@@ -353,10 +384,11 @@
   .cta-button:hover {
     background: var(--tc-text);
     color: white !important;
+    box-shadow: var(--tc-glow);
   }
   .cta-button-secondary {
     display: inline-block;
-    background: white;
+    background: transparent;
     color: var(--tc-primary) !important;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
@@ -369,25 +401,17 @@
   .cta-button-secondary:hover {
     background: var(--tc-primary);
     color: white !important;
+    box-shadow: var(--tc-glow);
   }
   .cta-container {
     text-align: center;
     margin-top: 2rem;
   }
 
-  /* Dark mode adjustments */
-  .dark {
-    --tc-primary: #c4a89e;
-    --tc-secondary: #a89590;
-    --tc-light: #3a3432;
-    --tc-bg: #2a2624;
-    --tc-text: #e8e2df;
-    --tc-text-light: #a9a09b;
-    --tc-border: #4a4240;
-  }
+  /* Dark mode component overrides (palette itself is defined at the top of this file) */
   .dark .experience-card {
-    background: #2a2624;
-    border-left-color: #4a4240;
+    background: var(--tc-light);
+    border-left-color: var(--tc-border);
   }
   .dark .experience-card:hover {
     border-left-color: var(--tc-primary);
@@ -396,7 +420,7 @@
     color: var(--tc-text);
   }
   .dark .academic-card {
-    background: #2a2624;
+    background: var(--tc-light);
   }
   .dark .academic-card h3 {
     color: var(--tc-text);
@@ -407,14 +431,15 @@
   .dark .patents-section,
   .dark .impact-section,
   .dark .contact-section {
-    background: #2a2624;
-    border-color: #4a4240;
+    background: var(--tc-light);
+    border-color: var(--tc-border);
   }
   .dark .current-role {
-    background: #2a2624;
+    background: var(--tc-light);
   }
   .dark .metric-card {
-    background: #3a3432;
+    background: var(--tc-light);
+    border: 1px solid var(--tc-border);
   }
   .dark .metric-label {
     color: var(--tc-text);
@@ -519,10 +544,10 @@
     margin-top: 1.5rem;
   }
   .stats-badge {
-    background: var(--tc-bg);
+    background: var(--tc-light);
     border: 1px solid var(--tc-border);
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 0.375rem;
     font-size: 0.9rem;
     color: var(--tc-text);
   }

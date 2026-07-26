@@ -16,7 +16,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: '#3a3432'
+        color: '#111a2e'
 
   - block: markdown
     content:
@@ -43,7 +43,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📜 US Patents'
+      title: 'US Patents'
       text: |-
         ### Systems and methods for generating a chatbot
         
@@ -66,15 +66,15 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 Publications & Research'
+      title: 'Publications & Research'
       text: |-
         7+ publications in top venues including IEEE, Springer, and Applied Sciences. Research spans neural network architectures, human-robot interaction, conversational AI, and healthcare applications.
         
         **Key Research Themes:**
-        - 🧠 **Neural Network Architectures** — Echo State Networks, RNNs, adaptive systems
-        - 🤖 **Human-Robot Interaction** — Intuitive control interfaces (KURE system)
-        - 💬 **Conversational AI** — Chatbot generation and dialogue systems
-        - 🏥 **Healthcare AI** — Machine learning for functional disorders
+        - **Neural Network Architectures** — Echo State Networks, RNNs, adaptive systems
+        - **Human-Robot Interaction** — Intuitive control interfaces (KURE system)
+        - **Conversational AI** — Chatbot generation and dialogue systems
+        - **Healthcare AI** — Machine learning for functional disorders
         
         <div style="margin-top: 1.5rem;">
           <a href="/publication/" class="cta-button-secondary">View All Publications →</a>
@@ -85,7 +85,7 @@ sections:
 
   - block: markdown
     content:
-      title: '🎓 Education'
+      title: 'Education'
       text: |-
         ### PhD in Computer Science, AI & Robotics
         
@@ -109,13 +109,13 @@ sections:
 
   - block: markdown
     content:
-      title: '🔗 External Links'
+      title: 'External Links'
       text: |-
-        - 📄 [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis)
-        - 🎓 [PhD Thesis - University of Plymouth](https://pearl.plymouth.ac.uk/handle/10026.1/9998)
-        - 🔗 [LinkedIn](https://linkedin.com/in/christos-melidis)
-        - 🐙 [GitHub](https://github.com/melidisc)
-        - 🆔 [ORCID](https://orcid.org/0000-0003-2339-6696)
+        - [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis)
+        - [PhD Thesis - University of Plymouth](https://pearl.plymouth.ac.uk/handle/10026.1/9998)
+        - [LinkedIn](https://linkedin.com/in/christos-melidis)
+        - [GitHub](https://github.com/melidisc)
+        - [ORCID](https://orcid.org/0000-0003-2339-6696)
         
     design:
       columns: '2'

@@ -36,7 +36,7 @@ sections:
       title: ''
       text: |-
         <div class="social-proof-section">
-          <p style="font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Trusted by teams at</p>
+          <p style="font-size: 0.85rem; color: var(--tc-text-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">Trusted by teams at</p>
           
           <div class="company-logos">
             <a href="https://www.ada.cx/" target="_blank">Ada</a>
@@ -70,19 +70,19 @@ sections:
       text: |-
         <div class="services-grid">
         
-        ### 🎯 Conversational AI & LLMs
+        ### Conversational AI & LLMs
         
         Build production-ready chatbots, RAG systems, and LLM-powered applications. From fine-tuning to deployment, I've shipped solutions serving millions of users.
         
         ---
         
-        ### 🗣️ Voice & NLP Systems
+        ### Voice & NLP Systems
         
         End-to-end voice and text AI: speech recognition, voice biometrics, sentiment analysis, and custom NLP pipelines for your domain.
         
         ---
         
-        ### 🔬 Research to Production
+        ### Research to Production
         
         Turn academic papers and prototypes into scalable systems. I bridge the gap between cutting-edge research and real-world implementation.
         
@@ -148,7 +148,7 @@ sections:
         
         <a href="mailto:christos@neuralithmics.com" class="cta-button">Book a Discovery Call →</a>
         
-        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--tc-text-light);">
           <a href="mailto:christos@neuralithmics.com">christos@neuralithmics.com</a> · 
           <a href="https://linkedin.com/in/christos-melidis" target="_blank">LinkedIn</a> · 
           Thessaloniki, Greece (Remote globally)

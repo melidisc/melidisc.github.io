@@ -9,7 +9,7 @@ sections:
   - block: markdown
     content:
       title: 'Neural Algorithmics'
-      subtitle: 'Sweet Signals in Machine Learning'
+      subtitle: 'Notes on shipping AI systems that work'
       text: |-
         I write about Agentic AI, LLM applications, RAG systems, and lessons learned from shipping AI products at scale.
     design:
@@ -18,17 +18,17 @@ sections:
 
   - block: markdown
     content:
-      title: '📬 Subscribe to My Newsletter'
+      title: 'Subscribe to My Newsletter'
       text: |-
         Get weekly insights on AI/ML engineering, Agentic AI patterns, and practical tips from 10+ years of building production AI systems.
         
         <div style="text-align: center; margin: 2rem 0;">
-          <iframe src="https://melidisc.substack.com/embed" width="100%" height="150" style="border: 1px solid #EEE; background: white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://melidisc.substack.com/embed" width="100%" height="150" style="border: 1px solid var(--tc-border); background: white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
         </div>
         
         <div style="text-align: center; margin: 1rem 0;">
           <a href="https://melidisc.substack.com" target="_blank" class="cta-button" style="display: inline-block; padding: 1rem 2rem; font-size: 1.1rem;">
-            📰 Read Posts on Substack →
+            Read Posts on Substack →
           </a>
         </div>
         
@@ -37,7 +37,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📝 Latest Posts'
+      title: 'Latest Posts'
       text: |-
         <div class="stackblocks-embed" data-stackblock="cmkl0778w029401qiqyz4eehj"></div>
         <script src="https://frame.stackblocks.app/frame.js"></script>

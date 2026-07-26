@@ -18,7 +18,7 @@ sections:
 
   - block: markdown
     content:
-      title: '🎯 Agentic AI & LLM Applications'
+      title: 'Agentic AI & LLM Applications'
       text: |-
         Build production-ready AI agent systems that scale. I've shipped chatbots serving millions of users and hold **2 US patents** in this space.
         
@@ -39,7 +39,7 @@ sections:
 
   - block: markdown
     content:
-      title: '🗣️ Voice & NLP Technologies'
+      title: 'Voice & NLP Technologies'
       text: |-
         End-to-end voice and natural language solutions, from speech recognition to sentiment analysis.
         
@@ -59,7 +59,7 @@ sections:
 
   - block: markdown
     content:
-      title: '🔬 Research to Production'
+      title: 'Research to Production'
       text: |-
         Turn cutting-edge research into scalable, production-ready systems. I specialize in bridging the gap between academic papers and real-world implementation.
         
@@ -79,7 +79,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📈 B2B Intelligence & Data Products'
+      title: 'B2B Intelligence & Data Products'
       text: |-
         AI-powered solutions for business intelligence, lead scoring, and data enrichment—proven in FinTech and enterprise contexts.
         
@@ -98,7 +98,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📊 AI Strategy & Technical Leadership'
+      title: 'AI Strategy & Technical Leadership'
       text: |-
         Strategic guidance for AI initiatives, from roadmap planning to hands-on implementation leadership.
         
@@ -122,19 +122,19 @@ sections:
       text: |-
         <div class="engagement-models">
         
-        ### 💼 Project-Based
+        ### Project-Based
         
         Fixed scope and timeline for well-defined deliverables. Best for: POCs, specific implementations, research projects.
         
         ---
         
-        ### ⏱️ Hourly Consulting
+        ### Hourly Consulting
         
         Flexible engagement for advisory, code reviews, and technical guidance. Best for: Ongoing support, ad-hoc questions.
         
         ---
         
-        ### 📅 Retainer
+        ### Retainer
         
         Dedicated monthly hours for continuous collaboration. Best for: Long-term partnerships, fractional AI leadership.
         
