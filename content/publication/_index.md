@@ -19,31 +19,17 @@ sections:
 
   - block: markdown
     content:
-      title: 'US Patents'
-      text: |-
-        <div class="patent-list">
-        
-        ### Systems and methods for generating a chatbot
-        
-        **US Patent US11676044B1** • Arnon Mazza, **Christos Melidis** • Ada Support Inc.  
-        *Priority: 2022-08-16 • Filed: 2022-08-16 • Granted: 2023-06-13 • Published: 2023-06-13*
-        
-        Patent granted for innovative chatbot generation technology, enabling automated creation and deployment of conversational AI systems.
-        
-        ---
-        
-        ### Systems and methods for generating automatic training suggestions
-        
-        **US Patent 20230297887A1** • Armand Silviu Gurgu, **Christos Melidis** • Ada Support Inc.  
-        *Filed: 2022-12-15 • Published: 2023-09-21*
-        
-        Patent for automated training suggestion generation, improving chatbot training efficiency through intelligent recommendation systems.
-        
-        </div>
-        
+      title: 'Patents & Conference Papers'
+      text: ''
     design:
       columns: '1'
       css_class: patents-section
+
+  - block: resume-awards
+    content:
+      username: admin
+    design:
+      date_format: 'Jan 2006'
 
   - block: markdown
     content:
@@ -90,65 +76,6 @@ sections:
 
   - block: markdown
     content:
-      title: 'Conference Papers & Presentations'
-      text: |-
-        <div class="conference-list">
-        
-        ### KURE: Kinematic universal remote interface a human centred remote robot control paradigm
-        
-        **C. Melidis and D. Marocco** (2016)  
-        *IEEE International Conference on Systems, Man, and Cybernetics (SMC)*  
-        Budapest, Hungary • pp. 003130-003135  
-        
-        Introduces KURE, a kinematic universal remote interface prioritizing human-centered design for intuitive remote robot control.
-        
-        [Read full abstract →](/publication/kure-kinematic/)
-        
-        ---
-        
-        ### KURE: a Two-Way Adaptive System for Intuitive Robot Control
-        
-        **C. Melidis and D. Marocco** (2016)  
-        *Workshop on Behavior Adaptation, Interaction and Learning for Assistive Robotics*  
-        IEEE RO-MAN 2016 • New York City, USA
-        
-        Presents KURE as a bidirectional adaptive system enabling mutual adaptation between human operators and robotic systems.
-        
-        [Read full abstract →](/publication/kure-two-way/)
-        
-        ---
-        
-        ### A Human Centric Approach to Robotic Control
-        
-        **C. Melidis and D. Marocco** (2015)  
-        *IEEE International Conference on Systems, Man, and Cybernetics*  
-        Kowloon, Hong Kong • pp. 2441-2446  
-        doi: 10.1109/SMC.2015.427
-        
-        Develops control interfaces leveraging intuitive human movement patterns and cognitive models for improved robot operation.
-        
-        [Read full abstract →](/publication/human-centric/)
-        
-        ---
-        
-        ### An Exploration on Intuitive Interfaces for Robot Control Based on Self Organisation
-        
-        **Melidis C., Marocco D.** (2015)  
-        *Artificial Life and Intelligent Agents (ALIA 2014)*  
-        Communications in Computer and Information Science, vol 519. Springer, Cham  
-        Bangor, Wales, UK
-        
-        Explores self-organization principles in designing intuitive robot control interfaces that adapt to user interaction patterns.
-        
-        [Read full abstract →](/publication/exploration-intuitive/)
-        
-        </div>
-        
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
       title: 'Research Impact'
       text: |-
         <div class="impact-metrics">
@@ -184,11 +111,7 @@ sections:
         
         ---
         
-        ### External Links
-        
-        [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis)  
-        [PhD Thesis - University of Plymouth](https://pearl.plymouth.ac.uk/handle/10026.1/9998)  
-        [LinkedIn Publications](https://linkedin.com/in/christos-melidis)
+        [ResearchGate Profile](https://www.researchgate.net/profile/Christos-Melidis) · [More external links →](/experience/#links)
         
     design:
       columns: '1'

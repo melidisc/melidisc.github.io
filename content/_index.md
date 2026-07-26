@@ -110,7 +110,7 @@ sections:
         </div>
         
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/work/" class="cta-button-secondary">See My Work →</a>
+          <a href="/experience/" class="cta-button-secondary">See My Work →</a>
           <a href="/publication/" class="cta-button-secondary">View Publications →</a>
         </div>
         
