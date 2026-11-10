@@ -1,14 +1,19 @@
 {{/* Custom Styles for Shortcodes and Components */}}
-{{/* Minimal Terracotta Color Palette */}}
+{{/* Mint/Emerald Color Palette (ada.cx-inspired) */}}
 <style>
   :root {
-    --tc-primary: #a3877e;
-    --tc-secondary: #cbbab3;
-    --tc-light: #e8ddd8;
-    --tc-bg: #faf8f6;
-    --tc-text: #5c5250;
-    --tc-text-light: #8a7f7a;
-    --tc-border: #e0d6d0;
+    --tc-primary: #059669;
+    --tc-secondary: #34d399;
+    --tc-light: #d1fae5;
+    --tc-bg: #f0fdf9;
+    --tc-text: #0f172a;
+    --tc-text-light: #52606d;
+    --tc-border: #bbf7d0;
+
+    /* Fixed mint accent used for pill buttons, consistent across light/dark */
+    --mint: #6ee7b7;
+    --mint-hover: #34d399;
+    --mint-ink: #0a0a0a;
   }
 
   /* ===== Page Width - 90% viewport, max 1400px ===== */
@@ -337,13 +342,13 @@
     border-radius: 0.75rem;
   }
 
-  /* CTA Button Styles */
+  /* CTA Button Styles - pill-shaped mint accent, ada.cx-inspired */
   .cta-button {
     display: inline-block;
-    background: var(--tc-primary);
-    color: white !important;
+    background: var(--mint);
+    color: var(--mint-ink) !important;
     padding: 1rem 2rem;
-    border-radius: 0.25rem;
+    border-radius: 9999px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -351,43 +356,71 @@
     margin-top: 1rem;
   }
   .cta-button:hover {
-    background: var(--tc-text);
-    color: white !important;
+    background: var(--mint-hover);
+    color: var(--mint-ink) !important;
   }
   .cta-button-secondary {
     display: inline-block;
-    background: white;
-    color: var(--tc-primary) !important;
+    background: transparent;
+    color: var(--tc-text) !important;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
+    border-radius: 9999px;
     text-decoration: none;
     font-weight: 600;
-    border: 1px solid var(--tc-primary);
+    border: 1px solid var(--tc-text-light);
     transition: all 0.2s ease;
     margin: 0.5rem;
   }
   .cta-button-secondary:hover {
-    background: var(--tc-primary);
-    color: white !important;
+    background: var(--tc-text);
+    color: var(--tc-bg) !important;
+    border-color: var(--tc-text);
   }
   .cta-container {
     text-align: center;
     margin-top: 2rem;
   }
 
-  /* Dark mode adjustments */
+  /* Navbar CTA button (header.navbar.button) - pill-shaped mint, matches "Speak to an expert" */
+  .navbar a.rounded.border.font-semibold {
+    border-radius: 9999px !important;
+    background: var(--mint) !important;
+    color: var(--mint-ink) !important;
+    border-color: var(--mint) !important;
+  }
+  .navbar a.rounded.border.font-semibold:hover {
+    background: var(--mint-hover) !important;
+    color: var(--mint-ink) !important;
+    border-color: var(--mint-hover) !important;
+  }
+  /* Mobile menu's duplicate CTA link ships with no classes from the theme - style it to match */
+  .navbar li.mt-4.lg\:hidden > a {
+    display: inline-block;
+    border-radius: 9999px;
+    background: var(--mint);
+    color: var(--mint-ink);
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Dark mode adjustments - near-black page, mint accents (ada.cx-inspired) */
   .dark {
-    --tc-primary: #c4a89e;
-    --tc-secondary: #a89590;
-    --tc-light: #3a3432;
-    --tc-bg: #2a2624;
-    --tc-text: #e8e2df;
-    --tc-text-light: #a9a09b;
-    --tc-border: #4a4240;
+    --tc-primary: #6ee7b7;
+    --tc-secondary: #34d399;
+    --tc-light: #141414;
+    --tc-bg: #0a0a0a;
+    --tc-text: #f5f5f5;
+    --tc-text-light: #a3a3a3;
+    --tc-border: #262626;
+  }
+  /* Force the page background closer to ada.cx's near-black (theme default is a lighter slate) */
+  .dark body.page-wrapper {
+    background-color: #0a0a0a !important;
   }
   .dark .experience-card {
-    background: #2a2624;
-    border-left-color: #4a4240;
+    background: #141414;
+    border-left-color: #262626;
   }
   .dark .experience-card:hover {
     border-left-color: var(--tc-primary);
@@ -396,7 +429,7 @@
     color: var(--tc-text);
   }
   .dark .academic-card {
-    background: #2a2624;
+    background: #141414;
   }
   .dark .academic-card h3 {
     color: var(--tc-text);
@@ -407,14 +440,14 @@
   .dark .patents-section,
   .dark .impact-section,
   .dark .contact-section {
-    background: #2a2624;
-    border-color: #4a4240;
+    background: #141414;
+    border-color: #262626;
   }
   .dark .current-role {
-    background: #2a2624;
+    background: #141414;
   }
   .dark .metric-card {
-    background: #3a3432;
+    background: #1a1a1a;
   }
   .dark .metric-label {
     color: var(--tc-text);

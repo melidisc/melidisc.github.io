@@ -5,7 +5,7 @@
 
 # Appearance
 appearance:
-  mode: light
+  mode: dark
   color: emerald
 
 # SEO
@@ -37,6 +37,10 @@ header:
     show_theme_chooser: true
     logo:
       text: "Christos Melidis, PhD"
+    button:
+      enable: true
+      text: "Book a Call →"
+      url: "mailto:christos@neuralithmics.com"
 
 # Site footer
 footer:
