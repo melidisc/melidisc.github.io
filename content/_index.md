@@ -13,9 +13,13 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
           <span class="hero-logo-wrap">
-            <img src="/images/logos/neuralithmics-hero.png" alt="Neuralithmics Logo" style="max-width: 420px; width: 100%; height: auto; margin: 0 auto;">
+            <img src="/images/logos/mark.svg" alt="">
+            <span class="hero-wordmark">
+              <span class="brand-name">Neuralithmics</span>
+              <span class="brand-tagline">Neural Algorithmics</span>
+            </span>
           </span>
         </div>
         

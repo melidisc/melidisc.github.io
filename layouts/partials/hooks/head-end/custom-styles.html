@@ -1,19 +1,64 @@
 {{/* Custom Styles for Shortcodes and Components */}}
-{{/* Mint/Emerald Color Palette (ada.cx-inspired) */}}
+{{/* Boutique AI Consultancy: warm paper + deep forest green, serif/sans pairing */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --tc-primary: #059669;
-    --tc-secondary: #34d399;
-    --tc-light: #d1fae5;
-    --tc-bg: #f0fdf9;
-    --tc-text: #0f172a;
-    --tc-text-light: #52606d;
-    --tc-border: #bbf7d0;
+    --tc-primary: #1f3d2e;
+    --tc-secondary: #4a6b55;
+    --tc-light: #e9e4d4;
+    --tc-bg: #faf7f0;
+    --tc-card: #fffdf8;
+    --tc-text: #20241f;
+    --tc-text-light: #5b5a4f;
+    --tc-border: #e4ddc9;
 
-    /* Fixed mint accent used for pill buttons, consistent across light/dark */
-    --mint: #6ee7b7;
-    --mint-hover: #34d399;
-    --mint-ink: #0a0a0a;
+    --font-serif: 'Fraunces', Georgia, serif;
+  }
+
+  /* Serif display headings - the editorial/boutique touch.
+     Hugo Blox renders markdown-block titles as a plain styled <div>, not a
+     heading tag, so we also target its exact utility-class signature. */
+  h1, h2, h3,
+  .hero-wordmark,
+  .text-3xl.font-bold {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Retint Tailwind Typography's "prose-slate" (cool blue-gray) to our warm palette.
+     This is site-wide: every markdown block is wrapped in `.prose` by the theme. */
+  .prose {
+    --tw-prose-body: var(--tc-text-light);
+    --tw-prose-headings: var(--tc-text);
+    --tw-prose-links: var(--tc-primary);
+    --tw-prose-bold: var(--tc-text);
+    --tw-prose-counters: var(--tc-text-light);
+    --tw-prose-bullets: var(--tc-border);
+    --tw-prose-hr: var(--tc-border);
+    --tw-prose-quotes: var(--tc-text);
+    --tw-prose-quote-borders: var(--tc-border);
+    --tw-prose-captions: var(--tc-text-light);
+    --tw-prose-code: var(--tc-text);
+    --tw-prose-th-borders: var(--tc-border);
+    --tw-prose-td-borders: var(--tc-border);
+  }
+  .dark .prose {
+    --tw-prose-invert-body: var(--tc-text-light);
+    --tw-prose-invert-headings: var(--tc-text);
+    --tw-prose-invert-links: var(--tc-primary);
+    --tw-prose-invert-bold: var(--tc-text);
+    --tw-prose-invert-counters: var(--tc-text-light);
+    --tw-prose-invert-bullets: var(--tc-border);
+    --tw-prose-invert-hr: var(--tc-border);
+    --tw-prose-invert-quotes: var(--tc-text);
+    --tw-prose-invert-quote-borders: var(--tc-border);
+    --tw-prose-invert-captions: var(--tc-text-light);
+    --tw-prose-invert-code: var(--tc-text);
+    --tw-prose-invert-th-borders: var(--tc-border);
+    --tw-prose-invert-td-borders: var(--tc-border);
   }
 
   /* ===== Page Width - 90% viewport, max 1400px ===== */
@@ -141,7 +186,7 @@
 
   /* Experience Card - Standard job entries */
   .experience-card {
-    background: white;
+    background: var(--tc-card);
     padding: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -272,7 +317,7 @@
     margin: 2rem 0;
   }
   .metric-card {
-    background: white;
+    background: var(--tc-card);
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -333,92 +378,128 @@
   }
   /* Image displays normally - no filter */
 
-  /* Hero logo: the artwork is navy-on-transparent, so it has poor contrast against
-     the dark-mode background. Recolor it to white via filter instead of boxing it
-     in a white card - keeps the transparent background, no boxed-in look. */
+  /* Hero mark (SVG icon): hardcoded forest-green in the source file for light mode.
+     Recolor to a soft cream in dark mode via filter - keeps it transparent, no boxed-in look. */
+  .hero-logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .hero-logo-wrap img {
+    width: 64px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .hero-wordmark {
+    text-align: left;
+    line-height: 1.1;
+  }
+  .hero-wordmark .brand-name {
+    display: block;
+    font-size: 1.9rem;
+    color: var(--tc-text);
+  }
+  .hero-wordmark .brand-tagline {
+    display: block;
+    font-family: var(--font-sans, inherit);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--tc-text-light);
+    margin-top: 0.35rem;
+  }
   .dark .hero-logo-wrap img {
     filter: brightness(0) invert(1);
   }
 
-  /* CTA Button Styles - pill-shaped mint accent, ada.cx-inspired */
+  /* CTA Button Styles - understated bordered buttons, boutique-consultancy feel */
   .cta-button {
     display: inline-block;
-    background: var(--mint);
-    color: var(--mint-ink) !important;
-    padding: 1rem 2rem;
-    border-radius: 9999px;
+    background: var(--tc-primary);
+    color: var(--tc-card) !important;
+    padding: 0.85rem 1.85rem;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    border: 1px solid var(--tc-primary);
     transition: all 0.2s ease;
     margin-top: 1rem;
   }
   .cta-button:hover {
-    background: var(--mint-hover);
-    color: var(--mint-ink) !important;
+    background: transparent;
+    color: var(--tc-primary) !important;
   }
   .cta-button-secondary {
     display: inline-block;
     background: transparent;
     color: var(--tc-text) !important;
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
-    border: 1px solid var(--tc-text-light);
+    border: 1px solid var(--tc-border);
     transition: all 0.2s ease;
     margin: 0.5rem;
   }
   .cta-button-secondary:hover {
-    background: var(--tc-text);
-    color: var(--tc-bg) !important;
-    border-color: var(--tc-text);
+    border-color: var(--tc-primary);
+    color: var(--tc-primary) !important;
   }
   .cta-container {
     text-align: center;
     margin-top: 2rem;
   }
 
-  /* Navbar CTA button (header.navbar.button) - pill-shaped mint, matches "Speak to an expert" */
+  /* Navbar CTA button (header.navbar.button) - understated bordered pill-free button */
   .navbar a.rounded.border.font-semibold {
-    border-radius: 9999px !important;
-    background: var(--mint) !important;
-    color: var(--mint-ink) !important;
-    border-color: var(--mint) !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    color: var(--tc-primary) !important;
+    border-color: var(--tc-primary) !important;
   }
   .navbar a.rounded.border.font-semibold:hover {
-    background: var(--mint-hover) !important;
-    color: var(--mint-ink) !important;
-    border-color: var(--mint-hover) !important;
+    background: var(--tc-primary) !important;
+    color: var(--tc-card) !important;
   }
   /* Mobile menu's duplicate CTA link ships with no classes from the theme - style it to match */
   .navbar li.mt-4.lg\:hidden > a {
     display: inline-block;
-    border-radius: 9999px;
-    background: var(--mint);
-    color: var(--mint-ink);
+    border-radius: 4px;
+    border: 1px solid var(--tc-primary);
+    color: var(--tc-primary);
     padding: 0.5rem 1.25rem;
     font-weight: 600;
     text-decoration: none;
   }
-
-  /* Dark mode adjustments - near-black page, mint accents (ada.cx-inspired) */
-  .dark {
-    --tc-primary: #6ee7b7;
-    --tc-secondary: #34d399;
-    --tc-light: #141414;
-    --tc-bg: #0a0a0a;
-    --tc-text: #f5f5f5;
-    --tc-text-light: #a3a3a3;
-    --tc-border: #262626;
+  /* Navbar brand mark (inlined SVG via header.navbar.logo.filename) */
+  .navbar-brand svg {
+    height: 26px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.6rem;
+    color: var(--tc-primary);
   }
-  /* Force the page background closer to ada.cx's near-black (theme default is a lighter slate) */
+
+  /* Dark mode adjustments - deep forest-charcoal, warm off-white text */
+  .dark {
+    --tc-primary: #8fae95;
+    --tc-secondary: #6f8f78;
+    --tc-light: #1c2820;
+    --tc-bg: #141d17;
+    --tc-card: #1a251e;
+    --tc-text: #f3f1e8;
+    --tc-text-light: #a9b2a7;
+    --tc-border: #2a3a30;
+  }
   .dark body.page-wrapper {
-    background-color: #0a0a0a !important;
+    background-color: #141d17 !important;
   }
   .dark .experience-card {
-    background: #141414;
-    border-left-color: #262626;
+    background: #1a251e;
+    border-left-color: #2a3a30;
   }
   .dark .experience-card:hover {
     border-left-color: var(--tc-primary);
@@ -427,7 +508,7 @@
     color: var(--tc-text);
   }
   .dark .academic-card {
-    background: #141414;
+    background: #1a251e;
   }
   .dark .academic-card h3 {
     color: var(--tc-text);
@@ -438,14 +519,14 @@
   .dark .patents-section,
   .dark .impact-section,
   .dark .contact-section {
-    background: #141414;
-    border-color: #262626;
+    background: #1a251e;
+    border-color: #2a3a30;
   }
   .dark .current-role {
-    background: #141414;
+    background: #1a251e;
   }
   .dark .metric-card {
-    background: #1a1a1a;
+    background: #1c2820;
   }
   .dark .metric-label {
     color: var(--tc-text);
@@ -474,7 +555,7 @@
   }
   .btn-outline-primary:hover {
     background: var(--tc-primary) !important;
-    color: white !important;
+    color: var(--tc-card) !important;
   }
 
   /* ===== Company Logos / Names for Social Proof ===== */
