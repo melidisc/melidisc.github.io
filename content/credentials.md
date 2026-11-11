@@ -16,7 +16,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: '#3a3432'
+        color: '#1a251e'
 
   - block: markdown
     content:

@@ -22,8 +22,8 @@ sections:
       text: |-
         Get weekly insights on AI/ML engineering, Agentic AI patterns, and practical tips from 10+ years of building production AI systems.
         
-        <div style="text-align: center; margin: 2rem 0;">
-          <iframe src="https://melidisc.substack.com/embed" width="100%" height="150" style="border: 1px solid #EEE; background: white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
+        <div class="substack-embed-card">
+          <iframe src="https://melidisc.substack.com/embed" width="100%" height="150" frameborder="0" scrolling="no"></iframe>
         </div>
         
         <div style="text-align: center; margin: 1rem 0;">
