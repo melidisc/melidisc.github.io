@@ -15,7 +15,7 @@ sections:
       text: |-
         <div style="text-align: center; margin-bottom: 1.5rem;">
           <span class="hero-logo-wrap">
-            <img src="/images/logos/neuralthmics_logo2.png" alt="Neuralithmics Logo" style="max-width: 760px; width: 100%; height: auto; margin: 0 auto;">
+            <img src="/images/logos/neuralithmics-hero.png" alt="Neuralithmics Logo" style="max-width: 420px; width: 100%; height: auto; margin: 0 auto;">
           </span>
         </div>
         

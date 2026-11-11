@@ -333,13 +333,11 @@
   }
   /* Image displays normally - no filter */
 
-  /* Hero logo: the artwork is dark-on-transparent, so it disappears against
-     the dark-mode background. Give it a permanent light backdrop in dark mode. */
-  .dark .hero-logo-wrap {
-    display: inline-block;
-    background: #ffffff;
-    padding: 1.5rem 2rem;
-    border-radius: 0.75rem;
+  /* Hero logo: the artwork is navy-on-transparent, so it has poor contrast against
+     the dark-mode background. Recolor it to white via filter instead of boxing it
+     in a white card - keeps the transparent background, no boxed-in look. */
+  .dark .hero-logo-wrap img {
+    filter: brightness(0) invert(1);
   }
 
   /* CTA Button Styles - pill-shaped mint accent, ada.cx-inspired */
