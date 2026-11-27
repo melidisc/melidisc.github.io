@@ -1,0 +1,14 @@
+{{/* Project override of Hugo Blox's `landing_page.html`.
+     Upstream's per-section <h1> injection (parse_block_v2.html) is currently
+     dead code (`$use_cols` is hardcoded false), so landing-type pages ship
+     with zero semantic headings. Add one visually-hidden <h1> from the page
+     title for proper document structure, without changing the visual design. */}}
+{{ $h1_title := .Title | default site.Title }}
+{{ with $h1_title }}<h1 class="visually-hidden">{{ . }}</h1>{{ end }}
+
+{{ range $index, $block := .Params.sections }}
+  {{/* Do not show sections intended only for the demo site. */}}
+  {{ if or (not $block.demo) ($block.demo | and (eq (os.Getenv "HUGO_BLOX_DEMO") "true")) }}
+    {{ partial "functions/parse_block_v2" (dict "page" $ "block" $block) }}
+  {{ end }}
+{{ end }}

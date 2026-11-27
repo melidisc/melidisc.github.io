@@ -1,0 +1,55 @@
+{{/* Project override of Hugo Blox's `jsonld/business.html`.
+     Upstream only emits @type/@id/name/logo/url - adds description, email,
+     and sameAs (the author's real profile links) for richer entity /
+     E-E-A-T signals. local_business_type lets the configured site_type
+     (e.g. LocalBusiness) be narrowed to a more specific schema.org subtype
+     (e.g. ProfessionalService) - upstream reads that param but never uses it. */}}
+{{- $sharing_image := resources.GetMatch (path.Join "media" "sharing.*") -}}
+{{- $site_type := site.Params.marketing.seo.site_type -}}
+{{- $type := $site_type -}}
+{{- if and (eq $site_type "LocalBusiness") site.Params.marketing.seo.local_business_type -}}
+  {{- $type = site.Params.marketing.seo.local_business_type -}}
+{{- end -}}
+{{- $author := site.GetPage "/authors/admin" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ $type }},
+  "@id": {{site.BaseURL}},
+  "name": {{site.Params.marketing.seo.org_name | default site.Title}},
+  {{ with site.Params.marketing.seo.description }}"description": {{.}},{{ end }}
+  "logo": {{ partial "functions/get_logo_url" . }},
+  {{with $sharing_image}}"image": {{.Permalink}},{{end}}
+  {{ if (eq $site_type "LocalBusiness") | and site.Params.marketing.seo.coordinates }}
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{site.Params.marketing.seo.coordinates.latitude}},
+    "longitude": {{site.Params.marketing.seo.coordinates.longitude}}
+  },
+  {{end}}
+  {{ with site.Params.marketing.seo.address }}
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ .street | default "" }},
+    "addressLocality": {{ .city | default "" }},
+    "addressRegion": {{ .region | default "" }},
+    "postalCode": {{ .postcode | default "" }},
+    "addressCountry": {{ .country_code | default .country | default "" }}
+  },
+  {{end}}
+  {{ with site.Params.marketing.seo.phone }}"telephone": {{.}},{{end}}
+  {{- if $author -}}
+    {{- range $author.Params.profiles -}}
+      {{- if eq .icon "envelope" }}"email": {{ replace .link "mailto:" "" | jsonify | safeJS }},
+      {{ end -}}
+    {{- end -}}
+    {{- $sameAs := slice -}}
+    {{- range $author.Params.profiles -}}
+      {{- if ne .icon "envelope" }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+    {{- end -}}
+    {{- with $sameAs }}"sameAs": {{ . | jsonify | safeJS }},
+    {{ end -}}
+  {{- end }}
+  "url": {{site.BaseURL}}
+}
+</script>

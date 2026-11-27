@@ -1,6 +1,10 @@
 ---
 title: Professional Experience
 type: landing
+private: true
+build:
+  list: never
+  render: always
 
 design:
   spacing: "4rem"

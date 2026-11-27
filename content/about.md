@@ -1,5 +1,6 @@
 ---
 title: About
+summary: "Christos Melidis, PhD: AI & Machine Learning Consultant with 10+ years' experience, 2 US patents, and a PhD in AI & Robotics from the University of Plymouth."
 type: landing
 
 design:

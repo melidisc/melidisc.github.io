@@ -1,5 +1,6 @@
 ---
 title: Blog & Newsletter
+summary: "Writing on generative AI agents, LLM applications, and RAG systems — practical lessons from 10+ years shipping production AI products."
 type: landing
 
 design:

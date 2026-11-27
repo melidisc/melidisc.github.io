@@ -12,7 +12,7 @@ interests:
   - B2B Intelligence & Data Products
   - AI Strategy & Technical Leadership
 
-social:
+profiles:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:christos@neuralithmics.com'
@@ -28,7 +28,7 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0003-2339-6696
-  - icon: graduation-cap
+  - icon: academic-cap
     icon_pack: fas
     link: https://plymouth.academia.edu/ChristosMelidis
 

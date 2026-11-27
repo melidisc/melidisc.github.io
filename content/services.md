@@ -1,5 +1,6 @@
 ---
 title: Services
+summary: "AI consulting services: generative AI agents, LLM applications, RAG systems, and voice & NLP technologies. 10+ years of experience shipping production AI."
 type: landing
 
 design:

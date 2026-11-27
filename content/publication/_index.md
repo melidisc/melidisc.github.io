@@ -1,5 +1,6 @@
 ---
 title: Publications & Patents
+summary: "7+ peer-reviewed publications and 2 US patents spanning conversational AI, neural network architectures, and human-robot interaction."
 type: landing
 cms_exclude: true
 

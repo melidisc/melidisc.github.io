@@ -1,5 +1,6 @@
 ---
 title: Work & Results
+summary: "A record of AI systems shipped to production — from Ada Support's generative AI chatbot platform serving millions of users to 2 US patents in conversational AI."
 type: landing
 
 design:

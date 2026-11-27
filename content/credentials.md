@@ -1,5 +1,6 @@
 ---
 title: Credentials
+summary: "Patents, publications, and education: 2 US patents in conversational AI, 7+ publications in IEEE and Springer venues, and a PhD in AI & Robotics from Plymouth."
 type: landing
 
 design:

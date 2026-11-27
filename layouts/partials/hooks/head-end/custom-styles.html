@@ -61,6 +61,23 @@
     --tw-prose-invert-td-borders: var(--tc-border);
   }
 
+  /* Visually hides content while keeping it in the accessibility tree / DOM
+     for screen readers and search engines (used for the page's single <h1>
+     on landing pages - see layouts/partials/landing_page.html). Defined here
+     rather than relying on Tailwind's `sr-only` since that utility isn't
+     used anywhere in the theme's own templates and would get purged. */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   /* ===== Page Width - 90% viewport, max 1400px ===== */
   .universal-wrapper,
   .container,
